@@ -1,15 +1,14 @@
-import { toErrorFlipperObject } from './utils';
+import { toErrorFlipperObject } from './mappers';
 
-export const ERROR_INVALID_REQUEST: number = 1;
-export const ERROR_DATABASE_INVALID: number = 2;
-export const ERROR_SQL_EXECUTION_EXCEPTION: number = 3;
-export const ERROR_UNSUPPORTED_COMMAND: number = 4;
+const ERROR_INVALID_REQUEST: number = 1;
+const ERROR_DATABASE_INVALID: number = 2;
+const ERROR_SQL_EXECUTION_EXCEPTION: number = 3;
+const ERROR_UNSUPPORTED_COMMAND: number = 4;
 
-export const ERROR_INVALID_REQUEST_MESSAGE: string =
+const ERROR_INVALID_REQUEST_MESSAGE: string =
   'The request received was invalid';
 
-export const ERROR_DATABASE_INVALID_MESSAGE: string =
-  'Could not access database';
+const ERROR_DATABASE_INVALID_MESSAGE: string = 'Could not access database';
 
 export const getInvalidRequestError = () =>
   toErrorFlipperObject(ERROR_INVALID_REQUEST, ERROR_INVALID_REQUEST_MESSAGE);

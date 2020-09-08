@@ -4,11 +4,13 @@ import type {
   DatabaseGetTableDataResponse,
   DatabaseGetTableInfoResponse,
   DatabaseGetTableStructureResponse,
+  ExecuteSqlRequest,
+  FlipperArray,
+  FlipperObject,
+  GetTableDataRequest,
+  GetTableInfoRequest,
+  GetTableStructureRequest,
 } from './types';
-
-type FlipperObject = Record<string, unknown>;
-
-type FlipperArray = FlipperObject[];
 
 export async function databaseListToFlipperArray(
   databaseDescriptorHolderList: IterableIterator<DatabaseDescriptorHolder>
@@ -29,12 +31,6 @@ export async function databaseListToFlipperArray(
   }
 
   return databases;
-}
-
-interface GetTableStructureRequest {
-  readonly databaseId: number;
-
-  readonly table: string;
 }
 
 export function flipperObjectToGetTableStructureRequest(
@@ -85,20 +81,6 @@ export function databaseGetTableStructureResponseToFlipperObject(
   };
 }
 
-interface GetTableDataRequest {
-  readonly databaseId: number;
-
-  readonly table: string;
-
-  readonly order: string;
-
-  readonly reverse: boolean;
-
-  readonly start: number;
-
-  readonly count: number;
-}
-
 export function flipperObjectToGetTableDataRequest(
   params: FlipperObject
 ): GetTableDataRequest | null {
@@ -146,12 +128,6 @@ export function databaseGetTableDataReponseToFlipperObject(
   };
 }
 
-interface GetTableInfoRequest {
-  readonly databaseId: number;
-
-  readonly table: string;
-}
-
 export function flipperObjectToGetTableInfoRequest(
   params: FlipperObject
 ): GetTableInfoRequest | null {
@@ -174,12 +150,6 @@ export function databaseGetTableInfoResponseToFlipperObject(
   return {
     definition: databaseGetTableInfoResponse.definition,
   };
-}
-
-interface ExecuteSqlRequest {
-  readonly databaseId: number;
-
-  readonly value: string;
 }
 
 export function flipperObjectToExecuteSqlRequest(

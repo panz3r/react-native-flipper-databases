@@ -6,7 +6,6 @@ import {
   getInvalidRequestError,
   getSqlExecutionError,
 } from './errors';
-import type { DatabaseDriver } from './types';
 import {
   databaseExecuteSqlResponseToFlipperObject,
   databaseGetTableDataReponseToFlipperObject,
@@ -17,7 +16,8 @@ import {
   flipperObjectToGetTableDataRequest,
   flipperObjectToGetTableInfoRequest,
   flipperObjectToGetTableStructureRequest,
-} from './utils';
+} from './mappers';
+import type { DatabaseDriver } from './types';
 
 const DATABASE_LIST_COMMAND: string = 'databaseList';
 const EXECUTE_COMMAND: string = 'execute';

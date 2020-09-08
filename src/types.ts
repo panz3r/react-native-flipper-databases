@@ -1,6 +1,44 @@
-export interface DatabaseDescriptor {
-  name: string;
+// BASE types
+
+export type FlipperObject = Record<string, unknown>;
+
+export type FlipperArray = FlipperObject[];
+
+// REQUEST types
+
+export interface GetTableStructureRequest {
+  readonly databaseId: number;
+
+  readonly table: string;
 }
+
+export interface GetTableDataRequest {
+  readonly databaseId: number;
+
+  readonly table: string;
+
+  readonly order: string;
+
+  readonly reverse: boolean;
+
+  readonly start: number;
+
+  readonly count: number;
+}
+
+export interface GetTableInfoRequest {
+  readonly databaseId: number;
+
+  readonly table: string;
+}
+
+export interface ExecuteSqlRequest {
+  readonly databaseId: number;
+
+  readonly value: string;
+}
+
+// RESPONSE types
 
 export interface DatabaseGetTableStructureResponse {
   readonly structureColumns: string[];
@@ -40,6 +78,12 @@ export interface DatabaseExecuteSQLResponse {
   readonly insertedId: number | null;
 
   readonly affectedCount: number | null;
+}
+
+// DATABASE types
+
+export interface DatabaseDescriptor {
+  name: string;
 }
 
 export interface DatabaseDriver<
