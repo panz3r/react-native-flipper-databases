@@ -4,6 +4,7 @@ import type { Database } from '@nozbe/watermelondb';
 import type {
   DatabaseDescriptor,
   DatabaseDriver,
+  DatabaseExecuteSQLResponse,
   DatabaseGetTableDataResponse,
   DatabaseGetTableInfoResponse,
   DatabaseGetTableStructureResponse,
@@ -100,6 +101,13 @@ export class WatermelonDBDriver implements DatabaseDriver {
     return {
       definition: JSON.stringify(this.database.schema.tables[table], null, 2),
     };
+  }
+
+  async executeSql(
+    _databaseDescriptor: DatabaseDescriptor,
+    _query: string
+  ): Promise<DatabaseExecuteSQLResponse> {
+    return Promise.reject('Unsupported method');
   }
 }
 

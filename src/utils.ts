@@ -1,8 +1,9 @@
 import type {
   DatabaseDescriptorHolder,
-  DatabaseGetTableStructureResponse,
+  DatabaseExecuteSQLResponse,
   DatabaseGetTableDataResponse,
   DatabaseGetTableInfoResponse,
+  DatabaseGetTableStructureResponse,
 } from './types';
 
 type FlipperObject = Record<string, unknown>;
@@ -166,11 +167,64 @@ export function flipperObjectToGetTableInfoRequest(
     table,
   };
 }
+
 export function databaseGetTableInfoResponseToFlipperObject(
   databaseGetTableInfoResponse: DatabaseGetTableInfoResponse
 ): FlipperObject {
   return {
     definition: databaseGetTableInfoResponse.definition,
+  };
+}
+
+interface ExecuteSqlRequest {
+  readonly databaseId: number;
+
+  readonly value: string;
+}
+
+export function flipperObjectToExecuteSqlRequest(
+  params: FlipperObject
+): ExecuteSqlRequest | null {
+  const databaseId = params.databaseId as number;
+  const value = params.value as string;
+
+  if (databaseId <= 0 || !value) {
+    return null;
+  }
+
+  return {
+    databaseId,
+    value,
+  };
+}
+
+export function databaseExecuteSqlResponseToFlipperObject(
+  databaseExecuteSqlResponse: DatabaseExecuteSQLResponse
+): FlipperObject {
+  const columns: string[] = [];
+  if (databaseExecuteSqlResponse.columns !== null) {
+    for (const columnName of databaseExecuteSqlResponse.columns) {
+      columns.push(columnName);
+    }
+  }
+
+  const rows: unknown[][] = [];
+  if (databaseExecuteSqlResponse.values !== null) {
+    for (const row of databaseExecuteSqlResponse.values) {
+      const values: unknown[] = [];
+      for (const item of row) {
+        values.push(objectAndTypeToFlipperObject(item));
+      }
+      rows.push(values);
+    }
+  }
+
+  return {
+    type: databaseExecuteSqlResponse.type,
+    columns: columns,
+    values: rows,
+    insertedId: databaseExecuteSqlResponse.insertedId,
+    affectedCount: databaseExecuteSqlResponse.affectedCount,
   };
 }
 

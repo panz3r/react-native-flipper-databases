@@ -64,6 +64,19 @@ export class DatabasesManager {
     );
   }
 
+  async executeSql(databaseId: number, sqlString: string) {
+    const databaseDescriptorHolder = this.ddHolderMap.get(databaseId);
+
+    if (!databaseDescriptorHolder) {
+      return null;
+    }
+
+    return databaseDescriptorHolder.databaseDriver.executeSql(
+      databaseDescriptorHolder.databaseDescriptor,
+      sqlString
+    );
+  }
+
   private async preloadDatabases() {
     let databaseId: number = 1;
 

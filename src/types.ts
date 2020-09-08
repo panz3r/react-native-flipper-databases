@@ -28,6 +28,20 @@ export interface DatabaseGetTableInfoResponse {
   readonly definition: string;
 }
 
+export type ExecuteSQLType = 'select' | 'insert' | 'update_delete' | 'raw';
+
+export interface DatabaseExecuteSQLResponse {
+  readonly type: ExecuteSQLType;
+
+  readonly columns: string[] | null;
+
+  readonly values: unknown[][] | null;
+
+  readonly insertedId: number | null;
+
+  readonly affectedCount: number | null;
+}
+
 export interface DatabaseDriver<
   DD extends DatabaseDescriptor = DatabaseDescriptor
 > {
@@ -53,6 +67,11 @@ export interface DatabaseDriver<
     databaseDescriptor: DD,
     table: string
   ): Promise<DatabaseGetTableInfoResponse>;
+
+  executeSql(
+    databaseDescriptor: DD,
+    query: string
+  ): Promise<DatabaseExecuteSQLResponse>;
 }
 
 export interface DatabaseDescriptorHolder {

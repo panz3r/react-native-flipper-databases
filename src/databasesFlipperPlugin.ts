@@ -4,14 +4,16 @@ import { DatabasesManager } from './databasesManager';
 import {
   getInvalidDatabaseError,
   getInvalidRequestError,
-  getUnsupportedCommandError,
+  getSqlExecutionError,
 } from './errors';
 import type { DatabaseDriver } from './types';
 import {
+  databaseExecuteSqlResponseToFlipperObject,
   databaseGetTableDataReponseToFlipperObject,
   databaseGetTableInfoResponseToFlipperObject,
   databaseGetTableStructureResponseToFlipperObject,
   databaseListToFlipperArray,
+  flipperObjectToExecuteSqlRequest,
   flipperObjectToGetTableDataRequest,
   flipperObjectToGetTableInfoRequest,
   flipperObjectToGetTableStructureRequest,
@@ -123,9 +125,28 @@ export class DatabasesFlipperPlugin implements Flipper.FlipperPlugin {
       responder.success(databaseGetTableInfoResponseToFlipperObject(tableInfo));
     });
 
-    connection.receive(EXECUTE_COMMAND, (_data, responder) => {
-      // TODO: Implement method
-      responder.error(getUnsupportedCommandError(EXECUTE_COMMAND));
+    connection.receive(EXECUTE_COMMAND, async (data, responder) => {
+      const executeSqlRequest = flipperObjectToExecuteSqlRequest(data);
+      if (!executeSqlRequest) {
+        return responder.error(getInvalidRequestError());
+      }
+
+      try {
+        const executeSqlResponse = await this.databasesManager.executeSql(
+          executeSqlRequest.databaseId,
+          executeSqlRequest.value
+        );
+
+        if (!executeSqlResponse) {
+          return responder.error(getInvalidDatabaseError());
+        }
+
+        responder.success(
+          databaseExecuteSqlResponseToFlipperObject(executeSqlResponse)
+        );
+      } catch (err) {
+        return responder.error(getSqlExecutionError(err));
+      }
     });
   }
 }

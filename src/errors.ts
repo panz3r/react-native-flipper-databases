@@ -22,3 +22,6 @@ export const getUnsupportedCommandError = (commandName: string) =>
     ERROR_UNSUPPORTED_COMMAND,
     `Command '${commandName}' is NOT supported`
   );
+
+export const getSqlExecutionError = (error: unknown) =>
+  toErrorFlipperObject(ERROR_SQL_EXECUTION_EXCEPTION, String(error));
