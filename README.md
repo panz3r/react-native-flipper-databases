@@ -8,6 +8,8 @@
 
 This [React Native](https://reactnative.dev) plugin allows browsing popular React Native databases using [Flipper](https://fbflipper.com) built-in Databases plugin.
 
+![screenshot.jpeg](images/screenshot.jpeg)
+
 ## Installation
 
 ```sh
