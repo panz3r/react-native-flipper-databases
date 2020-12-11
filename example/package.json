@@ -11,16 +11,17 @@
   "dependencies": {
     "@nozbe/watermelondb": "^0.19.0",
     "react": "16.13.1",
-    "react-native": "0.63.2"
+    "react-native": "0.63.4"
   },
   "devDependencies": {
     "@babel/core": "^7.8.4",
     "@babel/plugin-proposal-decorators": "^7.10.5",
     "@babel/runtime": "^7.8.4",
-    "@types/react-native": "^0.63.2",
+    "@types/react": "^16.14.2",
+    "@types/react-native": "^0.63.37",
     "babel-plugin-module-resolver": "^4.0.0",
-    "metro-react-native-babel-preset": "^0.59.0",
-    "react-native-flipper": "^0.55.0",
-    "typescript": "^3.8.3"
+    "metro-react-native-babel-preset": "^0.64.0",
+    "react-native-flipper": "^0.69.0",
+    "typescript": "^3.9.7"
   }
 }
