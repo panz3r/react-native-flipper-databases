@@ -6,7 +6,9 @@
   "module": "lib/module/index",
   "types": "lib/typescript/src/index.d.ts",
   "react-native": "src",
+  "source": "src/index",
   "files": [
+    "src",
     "lib",
     "!lib/typescript/example",
     "!**/__tests__",
