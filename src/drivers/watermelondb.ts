@@ -35,7 +35,7 @@ export class WatermelonDBDriver implements DatabaseDriver {
   ): Promise<DatabaseGetTableStructureResponse> {
     const { columns } = this.database?.schema.tables[table];
 
-    const columnsDef = Object.keys(columns).map((k) => [
+    const columnsDef = Object.keys(columns).map(k => [
       k,
       columns[k].type,
       columns[k].isIndexed,
@@ -47,8 +47,8 @@ export class WatermelonDBDriver implements DatabaseDriver {
       structureValues: columnsDef,
       indexesColumns: ['name'],
       indexesValues: Object.keys(columns)
-        .filter((k) => columns[k].isIndexed)
-        .map((k) => [k]),
+        .filter(k => columns[k].isIndexed)
+        .map(k => [k]),
     };
   }
 
@@ -82,9 +82,9 @@ export class WatermelonDBDriver implements DatabaseDriver {
 
     return {
       columns: allColumns,
-      values: results.map((row) =>
+      values: results.map(row =>
         allColumns.map(
-          (colName) =>
+          colName =>
             ((row._raw as unknown) as { [key: string]: unknown })[colName]
         )
       ),
