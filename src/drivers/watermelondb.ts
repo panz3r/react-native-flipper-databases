@@ -85,7 +85,7 @@ export class WatermelonDBDriver implements DatabaseDriver {
       values: results.map(row =>
         allColumns.map(
           colName =>
-            ((row._raw as unknown) as { [key: string]: unknown })[colName]
+            (row._raw as unknown as { [key: string]: unknown })[colName]
         )
       ),
       start,
