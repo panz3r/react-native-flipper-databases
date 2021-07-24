@@ -2,18 +2,18 @@
   "name": "react-native-flipper-databases",
   "version": "0.2.2",
   "description": "Flipper Databases plugin for React Native",
-  "main": "lib/commonjs/index",
-  "module": "lib/module/index",
+  "main": "lib/commonjs/index.js",
+  "module": "lib/module/index.js",
   "types": "lib/typescript/src/index.d.ts",
-  "react-native": "src",
+  "react-native": "src/index.ts",
   "source": "src/index",
   "files": [
     "src",
     "lib",
-    "!lib/typescript/example",
     "!**/__tests__",
     "!**/__fixtures__",
-    "!**/__mocks__"
+    "!**/__mocks__",
+    "!lib/typescript/example"
   ],
   "scripts": {
     "test": "jest",
@@ -52,7 +52,6 @@
   ],
   "devDependencies": {
     "@commitlint/config-conventional": "^13.1.0",
-    "@react-native-community/bob": "^0.16.2",
     "@react-native-community/eslint-config": "^2.0.0",
     "@release-it/conventional-changelog": "^3.0.1",
     "@types/jest": "^26.0.24",
@@ -68,6 +67,7 @@
     "prettier": "^2.0.5",
     "react": "17.0.1",
     "react-native": "0.64.2",
+    "react-native-builder-bob": "^0.18.1",
     "react-native-flipper": "^0.69.0",
     "release-it": "^14.6.2",
     "typescript": "^3.9.7"
@@ -147,6 +147,15 @@
     "useTabs": false
   },
   "@react-native-community/bob": {
+    "source": "src",
+    "output": "lib",
+    "targets": [
+      "commonjs",
+      "module",
+      "typescript"
+    ]
+  },
+  "react-native-builder-bob": {
     "source": "src",
     "output": "lib",
     "targets": [
