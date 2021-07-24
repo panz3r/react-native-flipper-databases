@@ -51,14 +51,14 @@
     }
   ],
   "devDependencies": {
-    "@commitlint/config-conventional": "^12.1.1",
+    "@commitlint/config-conventional": "^13.1.0",
     "@react-native-community/bob": "^0.16.2",
     "@react-native-community/eslint-config": "^2.0.0",
-    "@release-it/conventional-changelog": "^2.0.1",
+    "@release-it/conventional-changelog": "^3.0.1",
     "@types/jest": "^26.0.24",
     "@types/react": "^17.0.15",
     "@types/react-native": "^0.64.12",
-    "commitlint": "^12.1.1",
+    "commitlint": "^13.1.0",
     "eslint": "7.14.0",
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-prettier": "^3.1.3",
