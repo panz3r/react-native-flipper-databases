@@ -29,7 +29,7 @@ import type Post from './database/model/Post';
 
 const App = () => {
   const createRandomPostRecord = useCallback(async () => {
-    await database.action(async () => {
+    await database.write(async () => {
       const postsCollection = database.collections.get('posts');
 
       await postsCollection.create((post: Post) => {
@@ -41,7 +41,7 @@ const App = () => {
   }, []);
 
   const createRandomCommentRecord = useCallback(async () => {
-    await database.action(async () => {
+    await database.write(async () => {
       const commentsCollection = database.collections.get('comments');
 
       await commentsCollection.create((comment: Comment) => {

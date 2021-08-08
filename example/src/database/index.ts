@@ -10,8 +10,7 @@ const adapter = new SQLiteAdapter({
   schema,
   // dbName: 'myapp', // optional database name or file system path
   // migrations, // optional migrations
-  // synchronous: true, // synchronous mode only works on iOS. improves performance and reduces glitches in most cases, but also has some downsides - test with and without it
-  // experimentalUseJSI: true, // experimental JSI mode, use only if you're brave
+  // jsi: true, // JSI mode
 });
 
 // Then, make a Watermelon database from it!
@@ -21,7 +20,6 @@ const database = new Database({
     Post, // ⬅️ You'll add Models to Watermelon here
     Comment,
   ],
-  actionsEnabled: true,
 });
 
 /// FlipperDatabasesPlugin - START
