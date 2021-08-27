@@ -30,7 +30,7 @@ if (__DEV__) {
 
   // Import required DBDrivers
   const WatermelonDBDriver =
-    require('react-native-flipper-databases/drivers/watermelondb').default;
+    require('react-native-flipper-databases/./drivers/watermelondb').default;
 
   connectDatabases([
     new WatermelonDBDriver(database), // Pass in database definition
