@@ -110,5 +110,3 @@ export class WatermelonDBDriver implements DatabaseDriver {
     return Promise.reject('Unsupported method');
   }
 }
-
-export default WatermelonDBDriver;
