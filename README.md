@@ -66,14 +66,14 @@ For [WatermelonDB](https://nozbe.github.io/WatermelonDB/):
 /// ReactNativeFlipperDatabases - START
 
 if (__DEV__) {
-  // Import connectDatabases function
-  const connectDatabases = require('react-native-flipper-databases').default;
-
-  // Import required DBDrivers
-  const WatermelonDBDriver = require('react-native-flipper-databases/src/drivers/watermelondb').default;
+  // Import connectDatabases function and required DBDrivers
+  const {
+    connectDatabases,
+    WatermelonDB,
+  } = require('react-native-flipper-databases');
 
   connectDatabases([
-    new WatermelonDBDriver(database), // Pass in database definition
+    new WatermelonDB(database), // Pass in database definition
   ]);
 }
 
