@@ -62,7 +62,7 @@
     "commitlint": "^13.1.0",
     "eslint": "7.32.0",
     "eslint-config-prettier": "^6.10.1",
-    "eslint-plugin-prettier": "3.4.1",
+    "eslint-plugin-prettier": "4.0.0",
     "husky": "^7.0.1",
     "jest": "^27.1.0",
     "pod-install": "^0.1.0",
