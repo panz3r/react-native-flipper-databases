@@ -7452,10 +7452,10 @@ react-native-builder-bob@^0.18.1:
   optionalDependencies:
     jetifier "^1.6.6"
 
-react-native-flipper@^0.107.0:
-  version "0.107.0"
-  resolved "https://registry.yarnpkg.com/react-native-flipper/-/react-native-flipper-0.107.0.tgz#a2fb52e7aef3cb8f7c1f8d105c4461b77dd863e9"
-  integrity sha512-WfqHjRrVdgmaYoW8oC/w4mAFezqlQZFVOacQbTMtTF3bYczJcFkLD/8Ad/VyE9vJDglD9xcw9HF4+Dg0JvEnqg==
+react-native-flipper@^0.110.0:
+  version "0.110.0"
+  resolved "https://registry.yarnpkg.com/react-native-flipper/-/react-native-flipper-0.110.0.tgz#d32975d1d2df3f55f234222a7f53b4d9ea70e450"
+  integrity sha512-VhHodD04j3SQoPUxHoSHV4jHZyxsdRn7svgA2XteAmw03kF/GF1/ytrcelq9yR/VvWXeUtdrJJ99az0b1nXLjQ==
 
 react-native@0.65.1:
   version "0.65.1"
