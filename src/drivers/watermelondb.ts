@@ -74,9 +74,9 @@ export class WatermelonDBDriver implements DatabaseDriver {
     const totalCount = await collection.query().fetchCount();
     const results = await collection
       .query(
-        Q.experimentalSortBy(order ?? 'id', !reverse ? 'asc' : 'desc'),
-        Q.experimentalSkip(start),
-        Q.experimentalTake(count)
+        Q.sortBy(order ?? 'id', !reverse ? 'asc' : 'desc'),
+        Q.skip(start),
+        Q.take(count)
       )
       .fetch();
 
