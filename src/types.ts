@@ -17,7 +17,7 @@ export interface GetTableDataRequest {
 
   readonly table: string;
 
-  readonly order: string;
+  readonly order: string | undefined;
 
   readonly reverse: boolean;
 
@@ -101,7 +101,7 @@ export interface DatabaseDriver<
   getTableData(
     databaseDescriptor: DD,
     table: string,
-    order: string,
+    order: string | undefined,
     reverse: boolean,
     start: number,
     count: number

@@ -30,7 +30,7 @@ export class DatabasesManager {
   async getTableData(
     databaseId: number,
     tableName: string,
-    order: string,
+    order: string | undefined,
     reverse: boolean,
     start: number,
     count: number

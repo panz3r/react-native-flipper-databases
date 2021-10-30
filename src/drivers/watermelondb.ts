@@ -55,7 +55,7 @@ export class WatermelonDBDriver implements DatabaseDriver {
   async getTableData(
     _databaseDescriptor: DatabaseDescriptor,
     table: string,
-    order: string,
+    order: string | undefined,
     reverse: boolean,
     start: number,
     count: number
