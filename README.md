@@ -94,6 +94,36 @@ if (__DEV__) {
 // ...
 ```
 
+### [MongoDB Realm](https://docs.mongodb.com/realm/sdk/react-native/)
+
+#### Setup
+
+Attach an open Realm:
+
+```js
+// ...
+
+const realm = await Realm.open(config);
+
+/// FlipperDatabasesPlugin - START
+
+if (__DEV__) {
+  // Import connectDatabases function and required DBDrivers
+  const {
+    connectDatabases,
+    RealmDB,
+  } = require('react-native-flipper-databases');
+
+  connectDatabases([
+    new RealmDB('Realm', realm), // Pass in a realm name and an open realm reference
+  ]);
+}
+
+/// FlipperDatabasesPlugin - END
+
+// ...
+```
+
 ## Contributing
 
 See the [contributing guide](CONTRIBUTING.md) to learn how to contribute to the repository and the development workflow.
