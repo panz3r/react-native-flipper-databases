@@ -1,0 +1,26 @@
+{
+  "name": "react-native-flipper-databases-example2",
+  "description": "Example app for react-native-flipper-databases with Realm",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "start": "react-native start"
+  },
+  "dependencies": {
+    "react": "17.0.2",
+    "react-native": "0.65.1",
+    "react-native-flipper": "^0.117.0",
+    "react-native-get-random-values": "^1.7.0",
+    "realm": "^10.7.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.9",
+    "@babel/runtime": "^7.12.5",
+    "babel-plugin-module-resolver": "^4.0.0",
+    "metro-react-native-babel-preset": "^0.66.0",
+    "react-native-codegen": "^0.0.7",
+    "react-test-renderer": "17.0.2"
+  }
+}

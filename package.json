@@ -23,8 +23,11 @@
     "prerelease": "bob build",
     "release": "release-it",
     "example": "yarn --cwd example",
-    "pods": "cd example && pod-install --quiet",
-    "bootstrap": "yarn example && yarn && yarn pods"
+    "example2": "yarn --cwd example2",
+    "pods:example1": "cd example && pod-install --quiet",
+    "pods:example2": "cd example2 && pod-install --quiet",
+    "pods": "yarn pods:example1 && yarn pods:example2",
+    "bootstrap": "yarn example && yarn example2 && yarn && yarn pods"
   },
   "keywords": [
     "react-native",
