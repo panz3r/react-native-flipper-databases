@@ -58,7 +58,19 @@ See [facebook/flipper#1628](https://github.com/facebook/flipper/issues/1628) for
 
 ## Usage
 
-For [WatermelonDB](https://nozbe.github.io/WatermelonDB/):
+### [WatermelonDB](https://nozbe.github.io/WatermelonDB/)
+
+#### Compatibility
+
+| WatermelonDB Version | Use Version |
+| -------------------- | ----------- |
+| >=0.24.0             | 2.x         |
+| <0.24.0              | 1.x         |
+
+
+#### Setup
+
+Attach a WatermelonDB database:
 
 ```js
 // ...
