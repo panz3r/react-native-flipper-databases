@@ -3404,10 +3404,10 @@ react-native-flipper@^0.117.0:
   resolved "https://registry.yarnpkg.com/react-native-flipper/-/react-native-flipper-0.117.0.tgz#d5e1bf4f8403b674c1e39f240b13d1137a5e2018"
   integrity sha512-r5IdubsO1rdDhRSDIL2Xk3DSZQSwWcNgjxgz7NcD+NuBv8y7mw48LbiW0779/MTHM2K9URshGnfLT0mrI0ZBKA==
 
-react-native@0.66.0:
-  version "0.66.0"
-  resolved "https://registry.yarnpkg.com/react-native/-/react-native-0.66.0.tgz#99bdd83a9a612a71b94242767989d666d445b007"
-  integrity sha512-m26TKwzsfHVdZ1hDG+7mZ4M4ftxFFZrhtiT0OXuwfBzmNtB3xhsJtYszPeizw33c9YNp8rvehKT3c4ldDCW6kA==
+react-native@0.66.1:
+  version "0.66.1"
+  resolved "https://registry.yarnpkg.com/react-native/-/react-native-0.66.1.tgz#96defaf60579406321340ebe1dcea76a3c942806"
+  integrity sha512-BBvytmqlOLL+bRcO0jBiYfg16lYRsYDOC8/5E+bpnhb3EGtU+YCQAYfszw6JL7Hfy0ftnQNP5yj8pt+vqMHXIA==
   dependencies:
     "@jest/create-cache-key-function" "^27.0.1"
     "@react-native-community/cli" "^6.0.0"
