@@ -887,6 +887,11 @@
   resolved "https://registry.yarnpkg.com/@react-native/polyfills/-/polyfills-2.0.0.tgz#4c40b74655c83982c8cf47530ee7dc13d957b6aa"
   integrity sha512-K0aGNn1TjalKj+65D7ycc1//H9roAQ51GJVk5ZJQFb2teECGmzd86bYDC0aYdbRf7gtovescq4Zt6FR0tgXiHQ==
 
+"@realm.io/common@^0.1.1":
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/@realm.io/common/-/common-0.1.1.tgz#2950846cbedd14bdfdc1175d7c3119c3469547b0"
+  integrity sha512-sXc7Ndhh39O9bm7/e0eeAx8keDBO83yoG7WfH04o6PqwVaIwm4T1uT0bhTO6OizP6ojhugZlVSu9HzgUVRE1Ag==
+
 "@sideway/address@^4.1.0":
   version "4.1.2"
   resolved "https://registry.yarnpkg.com/@sideway/address/-/address-4.1.2.tgz#811b84333a335739d3969cfc434736268170cad1"
@@ -4133,11 +4138,12 @@ realm-network-transport@^0.7.0:
     abort-controller "^3.0.0"
     node-fetch "^2.6.0"
 
-realm@^10.7.0:
-  version "10.9.1"
-  resolved "https://registry.yarnpkg.com/realm/-/realm-10.9.1.tgz#d0c0ce62726af43c564d89f7593cc6a015e66d77"
-  integrity sha512-56P4XCHiwKqeb5x9+g5+yQyxkcIHWhz3jAF+3bCE5dk4yjzSgTyEHYA94sGeoX45yWI6FWv68mxBpm1ctKfIyw==
+realm@^10.10.1:
+  version "10.10.1"
+  resolved "https://registry.yarnpkg.com/realm/-/realm-10.10.1.tgz#87c13b66328db0aead39a86d0fb38043b8d13c75"
+  integrity sha512-QODV1YybfRtfp0Df2JeW0yrxw2ZMMTb5MAU8SbEh8aKboGDYkSplp6C2qizTADwHgrj72RVzt7eG87DUe97/GA==
   dependencies:
+    "@realm.io/common" "^0.1.1"
     bindings "^1.5.0"
     bson "4.4.1"
     command-line-args "^5.1.1"
