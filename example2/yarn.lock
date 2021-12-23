@@ -4013,10 +4013,10 @@ react-native-codegen@^0.0.7:
     jscodeshift "^0.11.0"
     nullthrows "^1.1.1"
 
-react-native-flipper@^0.125.0:
-  version "0.125.0"
-  resolved "https://registry.yarnpkg.com/react-native-flipper/-/react-native-flipper-0.125.0.tgz#684ded2b43cf62bb037a47e4098f590ceb22c699"
-  integrity sha512-Ahql6yMRcI/ZHrf8YlIyyaWdv6X4be9uRYVgYphYHtHPuaTpINXOu+Sqhb+OhRzb7wqa2lvCU8bo7AgG33iSyg==
+react-native-flipper@^0.127.0:
+  version "0.127.0"
+  resolved "https://registry.yarnpkg.com/react-native-flipper/-/react-native-flipper-0.127.0.tgz#4d4040c0d0a45136b9bbabdc801d3e32d385de73"
+  integrity sha512-qloUyUOs9MoMVncIDDWeOxAPbomWJ3e4y0SgyCgq8joJEOXC7RvPWeEfUXp0EPyNhHGQV9a4RwzF6BWKFCR3Kg==
 
 react-native-get-random-values@^1.7.0:
   version "1.7.1"
