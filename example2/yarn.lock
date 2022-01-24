@@ -4077,10 +4077,10 @@ react-native-codegen@^0.0.7:
     jscodeshift "^0.11.0"
     nullthrows "^1.1.1"
 
-react-native-flipper@^0.127.0:
-  version "0.127.0"
-  resolved "https://registry.yarnpkg.com/react-native-flipper/-/react-native-flipper-0.127.0.tgz#4d4040c0d0a45136b9bbabdc801d3e32d385de73"
-  integrity sha512-qloUyUOs9MoMVncIDDWeOxAPbomWJ3e4y0SgyCgq8joJEOXC7RvPWeEfUXp0EPyNhHGQV9a4RwzF6BWKFCR3Kg==
+react-native-flipper@^0.129.0:
+  version "0.129.0"
+  resolved "https://registry.yarnpkg.com/react-native-flipper/-/react-native-flipper-0.129.0.tgz#b2f3626291a61de4eb662adedd290e0d0ab33fd9"
+  integrity sha512-m4chCu4Hx9FqH21ZtOD3FKusVf4BkmSiOfr1RLyuXnoRp+wVerx/QL/3sG8T5Pe1l5/xTyzuO16a/niQpU7krw==
 
 react-native-get-random-values@^1.7.2:
   version "1.7.2"
