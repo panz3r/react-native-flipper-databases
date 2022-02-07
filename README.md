@@ -56,6 +56,15 @@ import com.facebook.flipper.plugins.sharedpreferences.SharedPreferencesFlipperPl
 
 See [facebook/flipper#1628](https://github.com/facebook/flipper/issues/1628) for more details.
 
+### Expo
+
+When sticking to a managed [Expo](https://expo.dev/) project, it's impossible to make the necessary modifications to the `ReactNativeFlipper.java` file.
+
+[@liamdawson](https://github.com/liamdawson) wrote a basic plugin to automate those changes, which will ensure Expo prebuild and builds via EAS will disable the integrated Databases plugin on Android.
+
+See [@liamdawson/disable-react-native-flipper-databases-expo-plugin](https://www.npmjs.com/package/@liamdawson/disable-react-native-flipper-databases-expo-plugin) for more info.
+
+
 ## Usage
 
 ### [WatermelonDB](https://nozbe.github.io/WatermelonDB/)
