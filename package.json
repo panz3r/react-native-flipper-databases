@@ -89,6 +89,39 @@
     "@nozbe/watermelondb": ">=0.24",
     "realm": "*"
   },
+  "prettier": {
+    "quoteProps": "consistent",
+    "singleQuote": true,
+    "printWidth": 80,
+    "tabWidth": 2,
+    "trailingComma": "es5",
+    "arrowParens": "avoid",
+    "useTabs": false
+  },
+  "eslintConfig": {
+    "extends": [
+      "@react-native-community",
+      "prettier"
+    ],
+    "rules": {
+      "prettier/prettier": [
+        "error",
+        {
+          "quoteProps": "consistent",
+          "singleQuote": true,
+          "printWidth": 80,
+          "tabWidth": 2,
+          "trailingComma": "es5",
+          "arrowParens": "avoid",
+          "useTabs": false
+        }
+      ]
+    }
+  },
+  "eslintIgnore": [
+    "node_modules/",
+    "lib/"
+  ],
   "jest": {
     "preset": "react-native",
     "modulePathIgnorePatterns": [
@@ -117,37 +150,6 @@
         "preset": "angular"
       }
     }
-  },
-  "eslintConfig": {
-    "extends": [
-      "@react-native-community",
-      "prettier"
-    ],
-    "rules": {
-      "prettier/prettier": [
-        "error",
-        {
-          "quoteProps": "consistent",
-          "singleQuote": true,
-          "tabWidth": 2,
-          "trailingComma": "es5",
-          "arrowParens": "avoid",
-          "useTabs": false
-        }
-      ]
-    }
-  },
-  "eslintIgnore": [
-    "node_modules/",
-    "lib/"
-  ],
-  "prettier": {
-    "quoteProps": "consistent",
-    "singleQuote": true,
-    "tabWidth": 2,
-    "trailingComma": "es5",
-    "arrowParens": "avoid",
-    "useTabs": false
   },
   "react-native-builder-bob": {
     "source": "src",
