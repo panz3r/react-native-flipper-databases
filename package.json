@@ -92,7 +92,7 @@
   "prettier": {
     "quoteProps": "consistent",
     "singleQuote": true,
-    "printWidth": 80,
+    "printWidth": 90,
     "tabWidth": 2,
     "trailingComma": "es5",
     "arrowParens": "avoid",
@@ -109,7 +109,7 @@
         {
           "quoteProps": "consistent",
           "singleQuote": true,
-          "printWidth": 80,
+          "printWidth": 90,
           "tabWidth": 2,
           "trailingComma": "es5",
           "arrowParens": "avoid",
