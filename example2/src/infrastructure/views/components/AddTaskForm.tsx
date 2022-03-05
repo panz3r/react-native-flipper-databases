@@ -8,13 +8,18 @@ import {
   StyleSheet,
 } from 'react-native';
 
-import colors from '../styles/colors';
+import { colors } from '../styles/colors';
 
 interface AddTaskFormProps {
   onSubmit: (description: string) => void;
+
+  disabled?: boolean;
 }
 
-function AddTaskForm({ onSubmit }: AddTaskFormProps) {
+export const AddTaskForm: React.FC<AddTaskFormProps> = ({
+  onSubmit,
+  disabled = false,
+}) => {
   const [description, setDescription] = useState('');
 
   const handleSubmit = () => {
@@ -30,14 +35,20 @@ function AddTaskForm({ onSubmit }: AddTaskFormProps) {
         onChangeText={setDescription}
         autoCorrect={false}
         autoCapitalize="none"
+        editable={!disabled}
         style={styles.textInput}
       />
-      <Pressable onPress={handleSubmit} style={styles.submit}>
+
+      <Pressable
+        onPress={handleSubmit}
+        disabled={disabled}
+        style={styles.submit}
+      >
         <Text style={styles.icon}>＋</Text>
       </Pressable>
     </View>
   );
-}
+};
 
 const styles = StyleSheet.create({
   form: {
@@ -83,5 +94,3 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
   },
 });
-
-export default AddTaskForm;

@@ -1,40 +1,41 @@
 import React, { memo } from 'react';
 import { View, Text, Pressable, Platform, StyleSheet } from 'react-native';
 
-import colors from '../styles/colors';
+import { colors } from '../styles/colors';
 
 interface TaskItemProps {
   description: string;
+
   isComplete: boolean;
+
   onToggleStatus: () => void;
+
   onDelete: () => void;
 }
 
-function TaskItem({
+const TaskItemBase: React.FC<TaskItemProps> = ({
   description,
   isComplete,
   onToggleStatus,
   onDelete,
-}: TaskItemProps) {
-  return (
-    <View style={styles.task}>
-      <Pressable
-        onPress={onToggleStatus}
-        style={[styles.status, isComplete && styles.completed]}
-      >
-        <Text style={styles.icon}>{isComplete ? '✓' : '○'}</Text>
-      </Pressable>
-      <View style={styles.descriptionContainer}>
-        <Text numberOfLines={1} style={styles.description}>
-          {description}
-        </Text>
-      </View>
-      <Pressable onPress={onDelete} style={styles.deleteButton}>
-        <Text style={styles.deleteText}>Delete</Text>
-      </Pressable>
+}) => (
+  <View style={styles.task}>
+    <Pressable
+      onPress={onToggleStatus}
+      style={[styles.status, isComplete && styles.completed]}
+    >
+      <Text style={styles.icon}>{isComplete ? '✓' : '○'}</Text>
+    </Pressable>
+    <View style={styles.descriptionContainer}>
+      <Text numberOfLines={1} style={styles.description}>
+        {description}
+      </Text>
     </View>
-  );
-}
+    <Pressable onPress={onDelete} style={styles.deleteButton}>
+      <Text style={styles.deleteText}>Delete</Text>
+    </Pressable>
+  </View>
+);
 
 const styles = StyleSheet.create({
   task: {
@@ -103,4 +104,4 @@ const shouldNotRerender = (
   prevProps.description === nextProps.description &&
   prevProps.isComplete === nextProps.isComplete;
 
-export default memo(TaskItem, shouldNotRerender);
+export const TaskItem = memo(TaskItemBase, shouldNotRerender);

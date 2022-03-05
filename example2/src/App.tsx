@@ -1,13 +1,12 @@
 import React from 'react';
 
-import { RealmProvider } from './database/provider';
-
-import { TasksApp } from './TasksApp';
+import { RealmProvider } from './infrastructure/database';
+import { TasksView } from './infrastructure/views/Tasks';
 
 export function App() {
   return (
     <RealmProvider>
-      <TasksApp />
+      <TasksView />
     </RealmProvider>
   );
 }

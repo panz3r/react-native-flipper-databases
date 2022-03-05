@@ -1,6 +1,6 @@
 import Realm from 'realm';
 
-class Task extends Realm.Object {
+export class Task extends Realm.Object {
   _id!: Realm.BSON.ObjectId;
   description!: string;
   isComplete!: boolean;
@@ -24,5 +24,3 @@ class Task extends Realm.Object {
     },
   };
 }
-
-export default Task;

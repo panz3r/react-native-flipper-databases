@@ -1,8 +1,18 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, {
+  createContext,
+  createRef,
+  useContext,
+  useEffect,
+  useRef,
+  useState,
+} from 'react';
 import Realm from 'realm';
 
-import { realmDBContext } from './context';
-import Task from './models/Task';
+import { Task } from './models/Task';
+
+const RealmCtx = createContext(createRef<Realm>());
+
+const RealmCtxProvider = RealmCtx.Provider;
 
 // Open a local realm file with the schema(s) that are a part of this realm.
 const config = {
@@ -63,9 +73,15 @@ export const RealmProvider: React.FC<{}> = ({ children }) => {
     return null;
   }
 
-  return (
-    <realmDBContext.Provider value={realmRef}>
-      {children}
-    </realmDBContext.Provider>
-  );
+  return <RealmCtxProvider value={realmRef}>{children}</RealmCtxProvider>;
 };
+
+export function useRealm(): Realm {
+  const ctx = useContext(RealmCtx);
+
+  if (!ctx || !ctx.current) {
+    throw new Error('useRealm hook must be used inside RealmProvider context');
+  }
+
+  return ctx.current;
+}
