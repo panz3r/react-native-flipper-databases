@@ -40,10 +40,7 @@ export const RealmProvider: React.FC<{}> = ({ children }) => {
 
       if (__DEV__) {
         // Import connectDatabases function and required DBDrivers
-        const {
-          connectDatabases,
-          RealmDB,
-        } = require('react-native-flipper-databases');
+        const { connectDatabases, RealmDB } = require('react-native-flipper-databases');
 
         connectDatabases([
           new RealmDB('Realm', realm), // Pass in realm reference

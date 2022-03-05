@@ -4,22 +4,13 @@ type LoadTasksStore = Pick<TasksStore, 'loadTasks'>;
 
 export const loadTasksUseCase = (store: LoadTasksStore) => store.loadTasks();
 
-type UpdateTasksStore = Pick<
-  TasksStore,
-  'addTask' | 'updateTask' | 'removeTask'
->;
+type UpdateTasksStore = Pick<TasksStore, 'addTask' | 'updateTask' | 'removeTask'>;
 
-export const addTaskUseCase = (
-  store: UpdateTasksStore,
-  description: string
-) => {
+export const addTaskUseCase = (store: UpdateTasksStore, description: string) => {
   store.addTask(createTask(description));
 };
 
-export const toggleTaskStatusUseCase = (
-  store: UpdateTasksStore,
-  task: Task
-) => {
+export const toggleTaskStatusUseCase = (store: UpdateTasksStore, task: Task) => {
   store.updateTask(toggleStatus(task));
 };
 

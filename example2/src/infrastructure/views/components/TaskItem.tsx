@@ -97,10 +97,7 @@ const styles = StyleSheet.create({
 });
 
 // We want to make sure only tasks that change are rerendered
-const shouldNotRerender = (
-  prevProps: TaskItemProps,
-  nextProps: TaskItemProps
-) =>
+const shouldNotRerender = (prevProps: TaskItemProps, nextProps: TaskItemProps) =>
   prevProps.description === nextProps.description &&
   prevProps.isComplete === nextProps.isComplete;
 

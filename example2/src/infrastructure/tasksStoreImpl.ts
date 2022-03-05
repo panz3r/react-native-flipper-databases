@@ -69,9 +69,7 @@ export function useRealmDBTasksStore(): TasksStore {
           getEntityId(task)
         );
         if (!taskToUpdate) {
-          throw new Error(
-            `Cannot update task with ID ${task.id}. Task not found!`
-          );
+          throw new Error(`Cannot update task with ID ${task.id}. Task not found!`);
         }
 
         realmDB.write(() => {
@@ -85,14 +83,9 @@ export function useRealmDBTasksStore(): TasksStore {
   const removeTask = useCallback(
     async (task: Task) =>
       updateTasks(realmDB => {
-        const taskToDelete = realmDB.objectForPrimaryKey(
-          'Task',
-          getEntityId(task)
-        );
+        const taskToDelete = realmDB.objectForPrimaryKey('Task', getEntityId(task));
         if (!taskToDelete) {
-          throw new Error(
-            `Cannot delete task with ID ${task.id}. Task not found!`
-          );
+          throw new Error(`Cannot delete task with ID ${task.id}. Task not found!`);
         }
 
         realmDB.write(() => {
