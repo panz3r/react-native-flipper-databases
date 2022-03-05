@@ -5,8 +5,7 @@ const ERROR_DATABASE_INVALID: number = 2;
 const ERROR_SQL_EXECUTION_EXCEPTION: number = 3;
 const ERROR_UNSUPPORTED_COMMAND: number = 4;
 
-const ERROR_INVALID_REQUEST_MESSAGE: string =
-  'The request received was invalid';
+const ERROR_INVALID_REQUEST_MESSAGE: string = 'The request received was invalid';
 
 const ERROR_DATABASE_INVALID_MESSAGE: string = 'Could not access database';
 

@@ -23,9 +23,7 @@ export class WatermelonDBDriver implements DatabaseDriver {
     ];
   }
 
-  async getTableNames(
-    _databaseDescriptor: DatabaseDescriptor
-  ): Promise<string[]> {
+  async getTableNames(_databaseDescriptor: DatabaseDescriptor): Promise<string[]> {
     return Object.keys(this.database?.schema.tables ?? []);
   }
 
@@ -84,8 +82,7 @@ export class WatermelonDBDriver implements DatabaseDriver {
       columns: allColumns,
       values: results.map(row =>
         allColumns.map(
-          colName =>
-            (row._raw as unknown as { [key: string]: unknown })[colName]
+          colName => (row._raw as unknown as { [key: string]: unknown })[colName]
         )
       ),
       start,

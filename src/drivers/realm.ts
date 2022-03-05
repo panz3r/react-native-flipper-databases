@@ -20,9 +20,7 @@ export class RealmDriver implements DatabaseDriver {
     ];
   }
 
-  async getTableNames(
-    _databaseDescriptor: DatabaseDescriptor
-  ): Promise<string[]> {
+  async getTableNames(_databaseDescriptor: DatabaseDescriptor): Promise<string[]> {
     // Return all models excluding embedded ones
     return this.realm.schema
       .filter(schema => !schema.embedded)
@@ -118,10 +116,7 @@ function getSchemaProperties(
     {}) as Record<string, Realm.ObjectSchemaProperty>;
 }
 
-function getCellValue(
-  row: Record<string, unknown>,
-  columnName: string
-): unknown {
+function getCellValue(row: Record<string, unknown>, columnName: string): unknown {
   const cellValue = row[columnName];
   return typeof cellValue === 'object' ? cellValue?.toString() : cellValue;
 }

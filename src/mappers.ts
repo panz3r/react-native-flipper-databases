@@ -198,10 +198,7 @@ export function databaseExecuteSqlResponseToFlipperObject(
   };
 }
 
-export function toErrorFlipperObject(
-  code: number,
-  message: string
-): FlipperObject {
+export function toErrorFlipperObject(code: number, message: string): FlipperObject {
   return {
     code,
     message,

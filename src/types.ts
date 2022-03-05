@@ -86,9 +86,7 @@ export interface DatabaseDescriptor {
   name: string;
 }
 
-export interface DatabaseDriver<
-  DD extends DatabaseDescriptor = DatabaseDescriptor
-> {
+export interface DatabaseDriver<DD extends DatabaseDescriptor = DatabaseDescriptor> {
   getDatabases(): Promise<DD[]>;
 
   getTableNames(databaseDescriptor: DD): Promise<string[]>;
@@ -112,10 +110,7 @@ export interface DatabaseDriver<
     table: string
   ): Promise<DatabaseGetTableInfoResponse>;
 
-  executeSql(
-    databaseDescriptor: DD,
-    query: string
-  ): Promise<DatabaseExecuteSQLResponse>;
+  executeSql(databaseDescriptor: DD, query: string): Promise<DatabaseExecuteSQLResponse>;
 }
 
 export interface DatabaseDescriptorHolder {
