@@ -1,12 +1,5 @@
 import React, { useState } from 'react';
-import {
-  View,
-  Text,
-  TextInput,
-  Pressable,
-  Platform,
-  StyleSheet,
-} from 'react-native';
+import { View, Text, TextInput, Pressable, Platform, StyleSheet } from 'react-native';
 
 import { colors } from '../styles/colors';
 
@@ -39,11 +32,7 @@ export const AddTaskForm: React.FC<AddTaskFormProps> = ({
         style={styles.textInput}
       />
 
-      <Pressable
-        onPress={handleSubmit}
-        disabled={disabled}
-        style={styles.submit}
-      >
+      <Pressable onPress={handleSubmit} disabled={disabled} style={styles.submit}>
         <Text style={styles.icon}>＋</Text>
       </Pressable>
     </View>

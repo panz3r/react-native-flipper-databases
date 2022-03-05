@@ -80,9 +80,7 @@ export function useWatermelonTasksStore(): TasksStore {
       updateTasks(async () => {
         const taskToUpdate = await tasksCollection.find(getEntityId(task));
         if (!taskToUpdate) {
-          throw new Error(
-            `Cannot update task with ID ${task.id}. Task not found!`
-          );
+          throw new Error(`Cannot update task with ID ${task.id}. Task not found!`);
         }
 
         taskToUpdate.update(record => {
@@ -98,9 +96,7 @@ export function useWatermelonTasksStore(): TasksStore {
       updateTasks(async () => {
         const taskToDelete = await tasksCollection.find(getEntityId(task));
         if (!taskToDelete) {
-          throw new Error(
-            `Cannot delete task with ID ${task.id}. Task not found!`
-          );
+          throw new Error(`Cannot delete task with ID ${task.id}. Task not found!`);
         }
 
         taskToDelete.destroyPermanently();
