@@ -16,18 +16,19 @@
     "!lib/typescript/example"
   ],
   "scripts": {
-    "test": "jest",
+    "setup": "yarn install",
+    "prepare": "husky install && bob build",
     "typescript": "tsc --noEmit",
     "lint": "eslint \"**/*.{js,ts,tsx}\"",
-    "prepare": "husky install && bob build",
-    "prerelease": "bob build",
+    "test": "jest",
+    "build": "bob build",
+    "prerelease": "run-s typescript lint test build",
     "release": "release-it",
-    "example": "yarn --cwd example",
-    "example2": "yarn --cwd example2",
-    "pods:example1": "cd example && pod-install --quiet",
-    "pods:example2": "cd example2 && pod-install --quiet",
-    "pods": "yarn pods:example1 && yarn pods:example2",
-    "bootstrap": "yarn example && yarn example2 && yarn && yarn pods"
+    "bootstrap": "run-s setup example:* pods:*",
+    "example:watermelon": "yarn --cwd example",
+    "pods:watermelon": "cd example && pod-install --quiet",
+    "example:realm": "yarn --cwd example2",
+    "pods:realm": "cd example2 && pod-install --quiet"
   },
   "keywords": [
     "react-native",
@@ -68,6 +69,7 @@
     "eslint-plugin-prettier": "4.0.0",
     "husky": "^7.0.1",
     "jest": "^27.1.0",
+    "npm-run-all": "^4.1.5",
     "pod-install": "^0.1.0",
     "prettier": "^2.0.2",
     "react": "17.0.2",
