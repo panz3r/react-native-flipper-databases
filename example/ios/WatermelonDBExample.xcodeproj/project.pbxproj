@@ -7,18 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00E356F31AD99517003FC87E /* FlipperDatabasesExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* FlipperDatabasesExampleTests.m */; };
+		00E356F31AD99517003FC87E /* WatermelonDBExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* WatermelonDBExampleTests.m */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		2DCD954D1E0B4F2C00145EB5 /* FlipperDatabasesExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* FlipperDatabasesExampleTests.m */; };
-		7E6EE1C2338C0DF8BB3319BC /* libPods-FlipperDatabasesExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C9782D697BEEB599DC8A9E0 /* libPods-FlipperDatabasesExample.a */; };
+		2DCD954D1E0B4F2C00145EB5 /* WatermelonDBExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* WatermelonDBExampleTests.m */; };
+		7E6EE1C2338C0DF8BB3319BC /* libPods-WatermelonDBExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C9782D697BEEB599DC8A9E0 /* libPods-WatermelonDBExample.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		BCDF07DF2506C78100B40C7E /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDF07DE2506C78100B40C7E /* File.swift */; };
-		EDF2CA3E29C137F52B73F7D8 /* libPods-FlipperDatabasesExample-FlipperDatabasesExampleTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 15395069A5698537A41B798F /* libPods-FlipperDatabasesExample-FlipperDatabasesExampleTests.a */; };
+		EDF2CA3E29C137F52B73F7D8 /* libPods-WatermelonDBExample-WatermelonDBExampleTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 15395069A5698537A41B798F /* libPods-WatermelonDBExample-WatermelonDBExampleTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,39 +27,39 @@
 			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
-			remoteInfo = FlipperDatabasesExample;
+			remoteInfo = WatermelonDBExample;
 		};
 		2D02E4911E0B4A5D006451C7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 2D02E47A1E0B4A5D006451C7;
-			remoteInfo = "FlipperDatabasesExample-tvOS";
+			remoteInfo = "WatermelonDBExample-tvOS";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		008F07F21AC5B25A0029DE68 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
-		00E356EE1AD99517003FC87E /* FlipperDatabasesExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlipperDatabasesExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00E356EE1AD99517003FC87E /* WatermelonDBExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WatermelonDBExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		00E356F21AD99517003FC87E /* FlipperDatabasesExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlipperDatabasesExampleTests.m; sourceTree = "<group>"; };
-		13B07F961A680F5B00A75B9A /* FlipperDatabasesExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlipperDatabasesExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = FlipperDatabasesExample/AppDelegate.h; sourceTree = "<group>"; };
-		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = FlipperDatabasesExample/AppDelegate.m; sourceTree = "<group>"; };
-		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = FlipperDatabasesExample/Images.xcassets; sourceTree = "<group>"; };
-		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = FlipperDatabasesExample/Info.plist; sourceTree = "<group>"; };
-		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = FlipperDatabasesExample/main.m; sourceTree = "<group>"; };
-		15395069A5698537A41B798F /* libPods-FlipperDatabasesExample-FlipperDatabasesExampleTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FlipperDatabasesExample-FlipperDatabasesExampleTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2267BED5D402BAAB7608FEFC /* Pods-FlipperDatabasesExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlipperDatabasesExample.debug.xcconfig"; path = "Target Support Files/Pods-FlipperDatabasesExample/Pods-FlipperDatabasesExample.debug.xcconfig"; sourceTree = "<group>"; };
-		2D02E47B1E0B4A5D006451C7 /* FlipperDatabasesExample-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FlipperDatabasesExample-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2D02E4901E0B4A5D006451C7 /* FlipperDatabasesExample-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FlipperDatabasesExample-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3EDE505D12FA956D70C38782 /* Pods-FlipperDatabasesExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlipperDatabasesExample.release.xcconfig"; path = "Target Support Files/Pods-FlipperDatabasesExample/Pods-FlipperDatabasesExample.release.xcconfig"; sourceTree = "<group>"; };
-		4C9782D697BEEB599DC8A9E0 /* libPods-FlipperDatabasesExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FlipperDatabasesExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		6BAC582942524B374474FA7E /* Pods-FlipperDatabasesExample-FlipperDatabasesExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlipperDatabasesExample-FlipperDatabasesExampleTests.debug.xcconfig"; path = "Target Support Files/Pods-FlipperDatabasesExample-FlipperDatabasesExampleTests/Pods-FlipperDatabasesExample-FlipperDatabasesExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
-		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = FlipperDatabasesExample/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		85952CD43ABF0324716C8626 /* Pods-FlipperDatabasesExample-FlipperDatabasesExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlipperDatabasesExample-FlipperDatabasesExampleTests.release.xcconfig"; path = "Target Support Files/Pods-FlipperDatabasesExample-FlipperDatabasesExampleTests/Pods-FlipperDatabasesExample-FlipperDatabasesExampleTests.release.xcconfig"; sourceTree = "<group>"; };
-		BCDF07DD2506C78100B40C7E /* FlipperDatabasesExample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FlipperDatabasesExample-Bridging-Header.h"; sourceTree = "<group>"; };
-		BCDF07DE2506C78100B40C7E /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = File.swift; path = FlipperDatabasesExample/File.swift; sourceTree = "<group>"; };
+		00E356F21AD99517003FC87E /* WatermelonDBExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WatermelonDBExampleTests.m; sourceTree = "<group>"; };
+		13B07F961A680F5B00A75B9A /* WatermelonDBExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatermelonDBExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = WatermelonDBExample/AppDelegate.h; sourceTree = "<group>"; };
+		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = WatermelonDBExample/AppDelegate.m; sourceTree = "<group>"; };
+		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = WatermelonDBExample/Images.xcassets; sourceTree = "<group>"; };
+		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = WatermelonDBExample/Info.plist; sourceTree = "<group>"; };
+		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = WatermelonDBExample/main.m; sourceTree = "<group>"; };
+		15395069A5698537A41B798F /* libPods-WatermelonDBExample-WatermelonDBExampleTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WatermelonDBExample-WatermelonDBExampleTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2267BED5D402BAAB7608FEFC /* Pods-WatermelonDBExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatermelonDBExample.debug.xcconfig"; path = "Target Support Files/Pods-WatermelonDBExample/Pods-WatermelonDBExample.debug.xcconfig"; sourceTree = "<group>"; };
+		2D02E47B1E0B4A5D006451C7 /* WatermelonDBExample-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WatermelonDBExample-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D02E4901E0B4A5D006451C7 /* WatermelonDBExample-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "WatermelonDBExample-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3EDE505D12FA956D70C38782 /* Pods-WatermelonDBExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatermelonDBExample.release.xcconfig"; path = "Target Support Files/Pods-WatermelonDBExample/Pods-WatermelonDBExample.release.xcconfig"; sourceTree = "<group>"; };
+		4C9782D697BEEB599DC8A9E0 /* libPods-WatermelonDBExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WatermelonDBExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6BAC582942524B374474FA7E /* Pods-WatermelonDBExample-WatermelonDBExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatermelonDBExample-WatermelonDBExampleTests.debug.xcconfig"; path = "Target Support Files/Pods-WatermelonDBExample-WatermelonDBExampleTests/Pods-WatermelonDBExample-WatermelonDBExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
+		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = WatermelonDBExample/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		85952CD43ABF0324716C8626 /* Pods-WatermelonDBExample-WatermelonDBExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatermelonDBExample-WatermelonDBExampleTests.release.xcconfig"; path = "Target Support Files/Pods-WatermelonDBExample-WatermelonDBExampleTests/Pods-WatermelonDBExample-WatermelonDBExampleTests.release.xcconfig"; sourceTree = "<group>"; };
+		BCDF07DD2506C78100B40C7E /* WatermelonDBExample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WatermelonDBExample-Bridging-Header.h"; sourceTree = "<group>"; };
+		BCDF07DE2506C78100B40C7E /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = File.swift; path = WatermelonDBExample/File.swift; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
@@ -69,7 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EDF2CA3E29C137F52B73F7D8 /* libPods-FlipperDatabasesExample-FlipperDatabasesExampleTests.a in Frameworks */,
+				EDF2CA3E29C137F52B73F7D8 /* libPods-WatermelonDBExample-WatermelonDBExampleTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,7 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7E6EE1C2338C0DF8BB3319BC /* libPods-FlipperDatabasesExample.a in Frameworks */,
+				7E6EE1C2338C0DF8BB3319BC /* libPods-WatermelonDBExample.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,13 +98,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		00E356EF1AD99517003FC87E /* FlipperDatabasesExampleTests */ = {
+		00E356EF1AD99517003FC87E /* WatermelonDBExampleTests */ = {
 			isa = PBXGroup;
 			children = (
-				00E356F21AD99517003FC87E /* FlipperDatabasesExampleTests.m */,
+				00E356F21AD99517003FC87E /* WatermelonDBExampleTests.m */,
 				00E356F01AD99517003FC87E /* Supporting Files */,
 			);
-			path = FlipperDatabasesExampleTests;
+			path = WatermelonDBExampleTests;
 			sourceTree = "<group>";
 		};
 		00E356F01AD99517003FC87E /* Supporting Files */ = {
@@ -115,7 +115,7 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		13B07FAE1A68108700A75B9A /* FlipperDatabasesExample */ = {
+		13B07FAE1A68108700A75B9A /* WatermelonDBExample */ = {
 			isa = PBXGroup;
 			children = (
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
@@ -126,9 +126,9 @@
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB71A68108700A75B9A /* main.m */,
 				BCDF07DE2506C78100B40C7E /* File.swift */,
-				BCDF07DD2506C78100B40C7E /* FlipperDatabasesExample-Bridging-Header.h */,
+				BCDF07DD2506C78100B40C7E /* WatermelonDBExample-Bridging-Header.h */,
 			);
-			name = FlipperDatabasesExample;
+			name = WatermelonDBExample;
 			sourceTree = "<group>";
 		};
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
@@ -136,8 +136,8 @@
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				ED2971642150620600B7C4FE /* JavaScriptCore.framework */,
-				4C9782D697BEEB599DC8A9E0 /* libPods-FlipperDatabasesExample.a */,
-				15395069A5698537A41B798F /* libPods-FlipperDatabasesExample-FlipperDatabasesExampleTests.a */,
+				4C9782D697BEEB599DC8A9E0 /* libPods-WatermelonDBExample.a */,
+				15395069A5698537A41B798F /* libPods-WatermelonDBExample-WatermelonDBExampleTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -145,10 +145,10 @@
 		7C85AB6B934A8480287043B7 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				2267BED5D402BAAB7608FEFC /* Pods-FlipperDatabasesExample.debug.xcconfig */,
-				3EDE505D12FA956D70C38782 /* Pods-FlipperDatabasesExample.release.xcconfig */,
-				6BAC582942524B374474FA7E /* Pods-FlipperDatabasesExample-FlipperDatabasesExampleTests.debug.xcconfig */,
-				85952CD43ABF0324716C8626 /* Pods-FlipperDatabasesExample-FlipperDatabasesExampleTests.release.xcconfig */,
+				2267BED5D402BAAB7608FEFC /* Pods-WatermelonDBExample.debug.xcconfig */,
+				3EDE505D12FA956D70C38782 /* Pods-WatermelonDBExample.release.xcconfig */,
+				6BAC582942524B374474FA7E /* Pods-WatermelonDBExample-WatermelonDBExampleTests.debug.xcconfig */,
+				85952CD43ABF0324716C8626 /* Pods-WatermelonDBExample-WatermelonDBExampleTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -163,9 +163,9 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
-				13B07FAE1A68108700A75B9A /* FlipperDatabasesExample */,
+				13B07FAE1A68108700A75B9A /* WatermelonDBExample */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
-				00E356EF1AD99517003FC87E /* FlipperDatabasesExampleTests */,
+				00E356EF1AD99517003FC87E /* WatermelonDBExampleTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				7C85AB6B934A8480287043B7 /* Pods */,
@@ -178,10 +178,10 @@
 		83CBBA001A601CBA00E9B192 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				13B07F961A680F5B00A75B9A /* FlipperDatabasesExample.app */,
-				00E356EE1AD99517003FC87E /* FlipperDatabasesExampleTests.xctest */,
-				2D02E47B1E0B4A5D006451C7 /* FlipperDatabasesExample-tvOS.app */,
-				2D02E4901E0B4A5D006451C7 /* FlipperDatabasesExample-tvOSTests.xctest */,
+				13B07F961A680F5B00A75B9A /* WatermelonDBExample.app */,
+				00E356EE1AD99517003FC87E /* WatermelonDBExampleTests.xctest */,
+				2D02E47B1E0B4A5D006451C7 /* WatermelonDBExample-tvOS.app */,
+				2D02E4901E0B4A5D006451C7 /* WatermelonDBExample-tvOSTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -189,9 +189,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		00E356ED1AD99517003FC87E /* FlipperDatabasesExampleTests */ = {
+		00E356ED1AD99517003FC87E /* WatermelonDBExampleTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "FlipperDatabasesExampleTests" */;
+			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "WatermelonDBExampleTests" */;
 			buildPhases = (
 				91E7468674DDB0EAF002E1DD /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
@@ -205,14 +205,14 @@
 			dependencies = (
 				00E356F51AD99517003FC87E /* PBXTargetDependency */,
 			);
-			name = FlipperDatabasesExampleTests;
-			productName = FlipperDatabasesExampleTests;
-			productReference = 00E356EE1AD99517003FC87E /* FlipperDatabasesExampleTests.xctest */;
+			name = WatermelonDBExampleTests;
+			productName = WatermelonDBExampleTests;
+			productReference = 00E356EE1AD99517003FC87E /* WatermelonDBExampleTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		13B07F861A680F5B00A75B9A /* FlipperDatabasesExample */ = {
+		13B07F861A680F5B00A75B9A /* WatermelonDBExample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "FlipperDatabasesExample" */;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "WatermelonDBExample" */;
 			buildPhases = (
 				37EDC9C9439EE11F346AE788 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
@@ -227,14 +227,14 @@
 			);
 			dependencies = (
 			);
-			name = FlipperDatabasesExample;
-			productName = FlipperDatabasesExample;
-			productReference = 13B07F961A680F5B00A75B9A /* FlipperDatabasesExample.app */;
+			name = WatermelonDBExample;
+			productName = WatermelonDBExample;
+			productReference = 13B07F961A680F5B00A75B9A /* WatermelonDBExample.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2D02E47A1E0B4A5D006451C7 /* FlipperDatabasesExample-tvOS */ = {
+		2D02E47A1E0B4A5D006451C7 /* WatermelonDBExample-tvOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "FlipperDatabasesExample-tvOS" */;
+			buildConfigurationList = 2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "WatermelonDBExample-tvOS" */;
 			buildPhases = (
 				FD10A7F122414F3F0027D42C /* Start Packager */,
 				2D02E4771E0B4A5D006451C7 /* Sources */,
@@ -246,14 +246,14 @@
 			);
 			dependencies = (
 			);
-			name = "FlipperDatabasesExample-tvOS";
-			productName = "FlipperDatabasesExample-tvOS";
-			productReference = 2D02E47B1E0B4A5D006451C7 /* FlipperDatabasesExample-tvOS.app */;
+			name = "WatermelonDBExample-tvOS";
+			productName = "WatermelonDBExample-tvOS";
+			productReference = 2D02E47B1E0B4A5D006451C7 /* WatermelonDBExample-tvOS.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2D02E48F1E0B4A5D006451C7 /* FlipperDatabasesExample-tvOSTests */ = {
+		2D02E48F1E0B4A5D006451C7 /* WatermelonDBExample-tvOSTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "FlipperDatabasesExample-tvOSTests" */;
+			buildConfigurationList = 2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "WatermelonDBExample-tvOSTests" */;
 			buildPhases = (
 				2D02E48C1E0B4A5D006451C7 /* Sources */,
 				2D02E48D1E0B4A5D006451C7 /* Frameworks */,
@@ -264,9 +264,9 @@
 			dependencies = (
 				2D02E4921E0B4A5D006451C7 /* PBXTargetDependency */,
 			);
-			name = "FlipperDatabasesExample-tvOSTests";
-			productName = "FlipperDatabasesExample-tvOSTests";
-			productReference = 2D02E4901E0B4A5D006451C7 /* FlipperDatabasesExample-tvOSTests.xctest */;
+			name = "WatermelonDBExample-tvOSTests";
+			productName = "WatermelonDBExample-tvOSTests";
+			productReference = 2D02E4901E0B4A5D006451C7 /* WatermelonDBExample-tvOSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -295,7 +295,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "FlipperDatabasesExample" */;
+			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "WatermelonDBExample" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -308,10 +308,10 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				13B07F861A680F5B00A75B9A /* FlipperDatabasesExample */,
-				00E356ED1AD99517003FC87E /* FlipperDatabasesExampleTests */,
-				2D02E47A1E0B4A5D006451C7 /* FlipperDatabasesExample-tvOS */,
-				2D02E48F1E0B4A5D006451C7 /* FlipperDatabasesExample-tvOSTests */,
+				13B07F861A680F5B00A75B9A /* WatermelonDBExample */,
+				00E356ED1AD99517003FC87E /* WatermelonDBExampleTests */,
+				2D02E47A1E0B4A5D006451C7 /* WatermelonDBExample-tvOS */,
+				2D02E48F1E0B4A5D006451C7 /* WatermelonDBExample-tvOSTests */,
 			);
 		};
 /* End PBXProject section */
@@ -394,7 +394,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-FlipperDatabasesExample-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-WatermelonDBExample-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -407,7 +407,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FlipperDatabasesExample/Pods-FlipperDatabasesExample-resources.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-WatermelonDBExample/Pods-WatermelonDBExample-resources.sh",
 				"${PODS_CONFIGURATION_BUILD_DIR}/React-Core/AccessibilityResources.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
@@ -416,7 +416,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FlipperDatabasesExample/Pods-FlipperDatabasesExample-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WatermelonDBExample/Pods-WatermelonDBExample-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		7CFB849B85107BEE9A6C7F5B /* [CP] Embed Pods Frameworks */ = {
@@ -425,7 +425,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FlipperDatabasesExample-FlipperDatabasesExampleTests/Pods-FlipperDatabasesExample-FlipperDatabasesExampleTests-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-WatermelonDBExample-WatermelonDBExampleTests/Pods-WatermelonDBExample-WatermelonDBExampleTests-frameworks.sh",
 				"${PODS_XCFRAMEWORKS_BUILD_DIR}/Flipper-DoubleConversion/double-conversion.framework/double-conversion",
 				"${PODS_XCFRAMEWORKS_BUILD_DIR}/OpenSSL-Universal/OpenSSL.framework/OpenSSL",
 			);
@@ -436,7 +436,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FlipperDatabasesExample-FlipperDatabasesExampleTests/Pods-FlipperDatabasesExample-FlipperDatabasesExampleTests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WatermelonDBExample-WatermelonDBExampleTests/Pods-WatermelonDBExample-WatermelonDBExampleTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		91E7468674DDB0EAF002E1DD /* [CP] Check Pods Manifest.lock */ = {
@@ -454,7 +454,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-FlipperDatabasesExample-FlipperDatabasesExampleTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-WatermelonDBExample-WatermelonDBExampleTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -467,7 +467,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FlipperDatabasesExample/Pods-FlipperDatabasesExample-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-WatermelonDBExample/Pods-WatermelonDBExample-frameworks.sh",
 				"${PODS_XCFRAMEWORKS_BUILD_DIR}/Flipper-DoubleConversion/double-conversion.framework/double-conversion",
 				"${PODS_XCFRAMEWORKS_BUILD_DIR}/OpenSSL-Universal/OpenSSL.framework/OpenSSL",
 			);
@@ -478,7 +478,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FlipperDatabasesExample/Pods-FlipperDatabasesExample-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WatermelonDBExample/Pods-WatermelonDBExample-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		D5847386A3CD3A613500B392 /* [CP] Copy Pods Resources */ = {
@@ -487,7 +487,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FlipperDatabasesExample-FlipperDatabasesExampleTests/Pods-FlipperDatabasesExample-FlipperDatabasesExampleTests-resources.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-WatermelonDBExample-WatermelonDBExampleTests/Pods-WatermelonDBExample-WatermelonDBExampleTests-resources.sh",
 				"${PODS_CONFIGURATION_BUILD_DIR}/React-Core/AccessibilityResources.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
@@ -496,7 +496,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FlipperDatabasesExample-FlipperDatabasesExampleTests/Pods-FlipperDatabasesExample-FlipperDatabasesExampleTests-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WatermelonDBExample-WatermelonDBExampleTests/Pods-WatermelonDBExample-WatermelonDBExampleTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FD10A7F022414F080027D42C /* Start Packager */ = {
@@ -544,7 +544,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00E356F31AD99517003FC87E /* FlipperDatabasesExampleTests.m in Sources */,
+				00E356F31AD99517003FC87E /* WatermelonDBExampleTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -571,7 +571,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2DCD954D1E0B4F2C00145EB5 /* FlipperDatabasesExampleTests.m in Sources */,
+				2DCD954D1E0B4F2C00145EB5 /* WatermelonDBExampleTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -580,12 +580,12 @@
 /* Begin PBXTargetDependency section */
 		00E356F51AD99517003FC87E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 13B07F861A680F5B00A75B9A /* FlipperDatabasesExample */;
+			target = 13B07F861A680F5B00A75B9A /* WatermelonDBExample */;
 			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
 		};
 		2D02E4921E0B4A5D006451C7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2D02E47A1E0B4A5D006451C7 /* FlipperDatabasesExample-tvOS */;
+			target = 2D02E47A1E0B4A5D006451C7 /* WatermelonDBExample-tvOS */;
 			targetProxy = 2D02E4911E0B4A5D006451C7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -593,7 +593,7 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6BAC582942524B374474FA7E /* Pods-FlipperDatabasesExample-FlipperDatabasesExampleTests.debug.xcconfig */;
+			baseConfigurationReference = 6BAC582942524B374474FA7E /* Pods-WatermelonDBExample-WatermelonDBExampleTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -601,7 +601,7 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = FlipperDatabasesExampleTests/Info.plist;
+				INFOPLIST_FILE = WatermelonDBExampleTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
@@ -615,18 +615,18 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FlipperDatabasesExample.app/FlipperDatabasesExample";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WatermelonDBExample.app/WatermelonDBExample";
 			};
 			name = Debug;
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 85952CD43ABF0324716C8626 /* Pods-FlipperDatabasesExample-FlipperDatabasesExampleTests.release.xcconfig */;
+			baseConfigurationReference = 85952CD43ABF0324716C8626 /* Pods-WatermelonDBExample-WatermelonDBExampleTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
-				INFOPLIST_FILE = FlipperDatabasesExampleTests/Info.plist;
+				INFOPLIST_FILE = WatermelonDBExampleTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
@@ -640,19 +640,19 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FlipperDatabasesExample.app/FlipperDatabasesExample";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WatermelonDBExample.app/WatermelonDBExample";
 			};
 			name = Release;
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2267BED5D402BAAB7608FEFC /* Pods-FlipperDatabasesExample.debug.xcconfig */;
+			baseConfigurationReference = 2267BED5D402BAAB7608FEFC /* Pods-WatermelonDBExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = FlipperDatabasesExample/Info.plist;
+				INFOPLIST_FILE = WatermelonDBExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(SDKROOT)/usr/lib/swift",
@@ -664,8 +664,8 @@
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = FlipperDatabasesExample;
-				SWIFT_OBJC_BRIDGING_HEADER = "FlipperDatabasesExample-Bridging-Header.h";
+				PRODUCT_NAME = WatermelonDBExample;
+				SWIFT_OBJC_BRIDGING_HEADER = "WatermelonDBExample-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -674,12 +674,12 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3EDE505D12FA956D70C38782 /* Pods-FlipperDatabasesExample.release.xcconfig */;
+			baseConfigurationReference = 3EDE505D12FA956D70C38782 /* Pods-WatermelonDBExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				INFOPLIST_FILE = FlipperDatabasesExample/Info.plist;
+				INFOPLIST_FILE = WatermelonDBExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(SDKROOT)/usr/lib/swift",
@@ -691,8 +691,8 @@
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = FlipperDatabasesExample;
-				SWIFT_OBJC_BRIDGING_HEADER = "FlipperDatabasesExample-Bridging-Header.h";
+				PRODUCT_NAME = WatermelonDBExample;
+				SWIFT_OBJC_BRIDGING_HEADER = "WatermelonDBExample-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -710,7 +710,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_TESTABILITY = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "FlipperDatabasesExample-tvOS/Info.plist";
+				INFOPLIST_FILE = "WatermelonDBExample-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(SDKROOT)/usr/lib/swift",
@@ -721,7 +721,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.FlipperDatabasesExample-tvOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.WatermelonDBExample-tvOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
@@ -741,7 +741,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "FlipperDatabasesExample-tvOS/Info.plist";
+				INFOPLIST_FILE = "WatermelonDBExample-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(SDKROOT)/usr/lib/swift",
@@ -752,7 +752,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.FlipperDatabasesExample-tvOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.WatermelonDBExample-tvOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
@@ -771,7 +771,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_TESTABILITY = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "FlipperDatabasesExample-tvOSTests/Info.plist";
+				INFOPLIST_FILE = "WatermelonDBExample-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(SDKROOT)/usr/lib/swift",
@@ -782,10 +782,10 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.FlipperDatabasesExample-tvOSTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.WatermelonDBExample-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FlipperDatabasesExample-tvOS.app/FlipperDatabasesExample-tvOS";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WatermelonDBExample-tvOS.app/WatermelonDBExample-tvOS";
 				TVOS_DEPLOYMENT_TARGET = 10.1;
 			};
 			name = Debug;
@@ -801,7 +801,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "FlipperDatabasesExample-tvOSTests/Info.plist";
+				INFOPLIST_FILE = "WatermelonDBExample-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(SDKROOT)/usr/lib/swift",
@@ -812,10 +812,10 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.FlipperDatabasesExample-tvOSTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.WatermelonDBExample-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FlipperDatabasesExample-tvOS.app/FlipperDatabasesExample-tvOS";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WatermelonDBExample-tvOS.app/WatermelonDBExample-tvOS";
 				TVOS_DEPLOYMENT_TARGET = 10.1;
 			};
 			name = Release;
@@ -938,7 +938,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "FlipperDatabasesExampleTests" */ = {
+		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "WatermelonDBExampleTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				00E356F61AD99517003FC87E /* Debug */,
@@ -947,7 +947,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "FlipperDatabasesExample" */ = {
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "WatermelonDBExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				13B07F941A680F5B00A75B9A /* Debug */,
@@ -956,7 +956,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "FlipperDatabasesExample-tvOS" */ = {
+		2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "WatermelonDBExample-tvOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2D02E4971E0B4A5E006451C7 /* Debug */,
@@ -965,7 +965,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "FlipperDatabasesExample-tvOSTests" */ = {
+		2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "WatermelonDBExample-tvOSTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2D02E4991E0B4A5E006451C7 /* Debug */,
@@ -974,7 +974,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "FlipperDatabasesExample" */ = {
+		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "WatermelonDBExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				83CBBA201A601CBA00E9B192 /* Debug */,
