@@ -8,18 +8,21 @@ import { TaskItem } from './TaskItem';
 interface TaskListProps {
   tasks: Task[];
 
-  onToggleTaskStatus: (task: Task) => void;
+  isLoading?: boolean;
 
   onDeleteTask: (task: Task) => void;
 
-  isLoading?: boolean;
+  onReloadTasks: () => void;
+
+  onToggleTaskStatus: (task: Task) => void;
 }
 
 export const TaskList: React.FC<TaskListProps> = ({
   tasks,
-  onToggleTaskStatus,
-  onDeleteTask,
   isLoading = false,
+  onDeleteTask,
+  onReloadTasks,
+  onToggleTaskStatus,
 }) => {
   const renderItem: ListRenderItem<Task> = useCallback(
     ({ item }) => (
@@ -37,6 +40,7 @@ export const TaskList: React.FC<TaskListProps> = ({
       <FlatList
         data={tasks}
         refreshing={isLoading}
+        onRefresh={onReloadTasks}
         keyExtractor={taskKeyExtractor}
         renderItem={renderItem}
       />

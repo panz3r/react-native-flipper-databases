@@ -15,6 +15,7 @@ export function TasksView() {
     tasks,
     shouldShowSpinner,
     shouldDisableButtons,
+    getTasks,
     addTask,
     toggleTaskStatus,
     removeTask,
@@ -33,8 +34,9 @@ export function TasksView() {
             <TaskList
               tasks={tasks}
               isLoading={shouldShowSpinner}
-              onToggleTaskStatus={toggleTaskStatus}
               onDeleteTask={removeTask}
+              onReloadTasks={getTasks}
+              onToggleTaskStatus={toggleTaskStatus}
             />
           )}
         </View>

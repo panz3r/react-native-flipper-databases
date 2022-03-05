@@ -37,7 +37,7 @@ export function useTasksViewModel(store: TasksStore) {
   return {
     tasks: store.tasks,
     shouldShowSpinner: store.isLoading,
-    shouldDisableButtons: store.isUpdating || store.isLoading,
+    shouldDisableButtons: store.isLoading || store.isUpdating,
     getTasks,
     addTask,
     toggleTaskStatus,
