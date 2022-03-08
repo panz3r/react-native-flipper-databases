@@ -133,6 +133,38 @@ if (__DEV__) {
 // ...
 ```
 
+### [PouchDB](https://pouchdb.com/)
+
+#### Setup
+
+Attach an open PouchDB database:
+
+```js
+// ...
+
+const db = new PouchDB('db', {
+  adapter: 'react-native-sqlite',
+});
+
+/// ReactNativeFlipperDatabases - START
+
+if (__DEV__) {
+  // Import connectDatabases function and required DBDrivers
+  const {
+    connectDatabases,
+    PouchDB: PouchDBDriver,
+  } = require('react-native-flipper-databases');
+
+  connectDatabases([
+    new PouchDBDriver([db]), // Pass in database definitions
+  ]);
+}
+
+/// ReactNativeFlipperDatabases - END
+
+// ...
+```
+
 ## Contributing
 
 See the [contributing guide](CONTRIBUTING.md) to learn how to contribute to the repository and the development workflow.
