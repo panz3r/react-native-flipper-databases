@@ -165,6 +165,30 @@ if (__DEV__) {
 // ...
 ```
 
+## Examples
+
+To see how to implement this plugin and test how it works some examples are provided.
+
+To run the examples:
+- clone the repo
+```sh
+git clone https://github.com/panz3r/react-native-flipper-databases.git
+```
+
+- bootstrap the project
+```sh
+yarn bootstrap
+```
+
+- launch one of the following scripts from the root folder
+
+  - `example:watermelon` to launch the [`WatermelonDB`](#watermelondb) example app
+  - `example:realm` to launch the [`MongoDB Realm`](#mongodb-realm) example app
+  - `example:pouch` to launch the [`PouchDB`](#pouchdb) example app
+
+The plugin integrations are located inside the `src/infrastructure/database` folder of each example app.
+
+
 ## Contributing
 
 See the [contributing guide](CONTRIBUTING.md) to learn how to contribute to the repository and the development workflow.
