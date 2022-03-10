@@ -3,6 +3,7 @@
   "exclude": [
     "example",
     "example2",
+    "example3",
     "src/__tests__"
   ]
 }
