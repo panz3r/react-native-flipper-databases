@@ -1860,9 +1860,9 @@
   integrity sha512-sXc7Ndhh39O9bm7/e0eeAx8keDBO83yoG7WfH04o6PqwVaIwm4T1uT0bhTO6OizP6ojhugZlVSu9HzgUVRE1Ag==
 
 "@release-it/conventional-changelog@^4.1.0":
-  version "4.2.1"
-  resolved "https://registry.yarnpkg.com/@release-it/conventional-changelog/-/conventional-changelog-4.2.1.tgz#bac51f7951747fff52fdfed7ec5004eca5fc6882"
-  integrity sha512-JtjrdokCDbka5jGLIJU/Z24pBqc715QwHE3D0IF/4RLlhCfptObeJkmmy/x5oDgD876ql/zkovjH2AHc+FBnxw==
+  version "4.2.2"
+  resolved "https://registry.yarnpkg.com/@release-it/conventional-changelog/-/conventional-changelog-4.2.2.tgz#924e96f2f1de96974a5e7ae239ccfd3a9302af82"
+  integrity sha512-cbpfMSKTt8VtyltNls6Kt0WXIRmgILNpF1nqGE2oe3acs286Brrb5WFGyPhYR8XUy0nVsnjG1zmUPP6n0Xd6XA==
   dependencies:
     concat-stream "^2.0.0"
     conventional-changelog "^3.1.25"
@@ -2852,12 +2852,12 @@ browser-process-hrtime@^1.0.0:
   integrity sha512-9o5UecI3GhkpM6DrXr69PblIuWxPKk9Y0jHBRhdocZ2y7YECBFCsHm79Pr3OyR2AvjhDkabFJaDJMYRazHgsow==
 
 browserslist@^4.16.0, browserslist@^4.17.5, browserslist@^4.19.1:
-  version "4.19.3"
-  resolved "https://registry.yarnpkg.com/browserslist/-/browserslist-4.19.3.tgz#29b7caad327ecf2859485f696f9604214bedd383"
-  integrity sha512-XK3X4xtKJ+Txj8G5c30B4gsm71s69lqXlkYui4s6EkKxuv49qjYlY6oVd+IFJ73d4YymtM3+djvvt/R/iJwwDg==
+  version "4.20.0"
+  resolved "https://registry.yarnpkg.com/browserslist/-/browserslist-4.20.0.tgz#35951e3541078c125d36df76056e94738a52ebe9"
+  integrity sha512-bnpOoa+DownbciXj0jVGENf8VYQnE2LNWomhYuCsMmmx9Jd9lwq0WXODuwpSsp8AVdKM2/HorrzxAfbKvWTByQ==
   dependencies:
-    caniuse-lite "^1.0.30001312"
-    electron-to-chromium "^1.4.71"
+    caniuse-lite "^1.0.30001313"
+    electron-to-chromium "^1.4.76"
     escalade "^3.1.1"
     node-releases "^2.0.2"
     picocolors "^1.0.0"
@@ -2991,10 +2991,10 @@ camelcase@^6.0.0, camelcase@^6.2.0:
   resolved "https://registry.yarnpkg.com/camelcase/-/camelcase-6.3.0.tgz#5685b95eb209ac9c0c177467778c9c84df58ba9a"
   integrity sha512-Gmy6FhYlCY7uOElZUSbxo2UCDH8owEk996gkbrpsgGtrJLM3J7jGxl9Ic7Qwwj4ivOE5AWZWRMecDdF7hqGjFA==
 
-caniuse-lite@^1.0.30001312:
-  version "1.0.30001312"
-  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001312.tgz#e11eba4b87e24d22697dae05455d5aea28550d5f"
-  integrity sha512-Wiz1Psk2MEK0pX3rUzWaunLTZzqS2JYZFzNKqAiJGiuxIjRPLgV6+VDPOg6lQOUxmDwhTlh198JsTTi8Hzw6aQ==
+caniuse-lite@^1.0.30001313:
+  version "1.0.30001314"
+  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001314.tgz#65c7f9fb7e4594fca0a333bec1d8939662377596"
+  integrity sha512-0zaSO+TnCHtHJIbpLroX7nsD+vYuOVjl3uzFbJO1wMVbuveJA0RK2WcQA9ZUIOiO0/ArMiMgHJLxfEZhQiC0kw==
 
 capture-exit@^2.0.0:
   version "2.0.0"
@@ -3895,10 +3895,10 @@ ee-first@1.1.1:
   resolved "https://registry.yarnpkg.com/ee-first/-/ee-first-1.1.1.tgz#590c61156b0ae2f4f0255732a158b266bc56b21d"
   integrity sha1-WQxhFWsK4vTwJVcyoViyZrxWsh0=
 
-electron-to-chromium@^1.4.71:
-  version "1.4.75"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.75.tgz#d1ad9bb46f2f1bf432118c2be21d27ffeae82fdd"
-  integrity sha512-LxgUNeu3BVU7sXaKjUDD9xivocQLxFtq6wgERrutdY/yIOps3ODOZExK1jg8DTEg4U8TUCb5MLGeWFOYuxjF3Q==
+electron-to-chromium@^1.4.76:
+  version "1.4.81"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.81.tgz#a9ce8997232fb9fb0ec53de8931a85b18c0a7383"
+  integrity sha512-Gs7xVpIZ7tYYSDA+WgpzwpPvfGwUk3KSIjJ0akuj5XQHFdyQnsUoM76EA4CIHXNLPiVwTwOFay9RMb0ChG3OBw==
 
 emittery@^0.8.1:
   version "0.8.1"
@@ -4105,9 +4105,9 @@ eslint-plugin-react-native@^3.10.0:
     eslint-plugin-react-native-globals "^0.1.1"
 
 eslint-plugin-react@^7.20.0:
-  version "7.29.2"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-react/-/eslint-plugin-react-7.29.2.tgz#2d4da69d30d0a736efd30890dc6826f3e91f3f7c"
-  integrity sha512-ypEBTKOy5liFQXZWMchJ3LN0JX1uPI6n7MN7OPHKacqXAxq5gYC30TdO7wqGYQyxD1OrzpobdHC3hDmlRWDg9w==
+  version "7.29.3"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-react/-/eslint-plugin-react-7.29.3.tgz#f4eab757f2756d25d6d4c2a58a9e20b004791f05"
+  integrity sha512-MzW6TuCnDOcta67CkpDyRfRsEVx9FNMDV8wZsDqe1luHPdGTrQIUaUXD27Ja3gHsdOIs/cXzNchWGlqm+qRVRg==
   dependencies:
     array-includes "^3.1.4"
     array.prototype.flatmap "^1.2.5"
@@ -4548,9 +4548,9 @@ flatted@^3.1.0:
   integrity sha512-WIWGi2L3DyTUvUrwRKgGi9TwxQMUEqPOPQBVi71R96jZXJdFskXEmf54BoZaS1kknGODoIGASGEzBUYdyMCBJg==
 
 flow-parser@0.*:
-  version "0.172.0"
-  resolved "https://registry.yarnpkg.com/flow-parser/-/flow-parser-0.172.0.tgz#9f5ee62ebf6bad689d5de0b6b98445d8cf030a2f"
-  integrity sha512-WWqgvuJgD9Y1n2su9D73m0g5kQ4XVl8Dwk6DeW5V6bjt4XMtVLzSHg35s3iiZOvShY+7w7l8FzlK81PGXRcIYQ==
+  version "0.173.0"
+  resolved "https://registry.yarnpkg.com/flow-parser/-/flow-parser-0.173.0.tgz#992539fe87b4448a660ac1c54ffa358301e7110b"
+  integrity sha512-gikomjo+jzdehhOCHP2Ca5y1HGK3jkODhUdTxk4a3SdyLAMBsEwb7KJETHzB4KQs7HhHcqhyT7mGmd9iT8B5Hg==
 
 flow-parser@^0.121.0:
   version "0.121.0"
@@ -8613,9 +8613,9 @@ run-parallel@^1.1.9:
     queue-microtask "^1.2.2"
 
 rxjs@^7.2.0, rxjs@^7.3.0:
-  version "7.5.4"
-  resolved "https://registry.yarnpkg.com/rxjs/-/rxjs-7.5.4.tgz#3d6bd407e6b7ce9a123e76b1e770dc5761aa368d"
-  integrity sha512-h5M3Hk78r6wAheJF0a5YahB1yRQKCsZ4MsGdZ5O9ETbVtjPcScGfrMmoOq7EBsCRzd4BDkvDJ7ogP8Sz5tTFiQ==
+  version "7.5.5"
+  resolved "https://registry.yarnpkg.com/rxjs/-/rxjs-7.5.5.tgz#2ebad89af0f560f460ad5cc4213219e1f7dd4e9f"
+  integrity sha512-sy+H0pQofO95VDmFLzyaw9xNJU4KTRSwQIGM6+iG3SypAtCiLDzpeG8sJrNCWn2Up9km+KhkvTdbkrdy+yzZdw==
   dependencies:
     tslib "^2.1.0"
 
@@ -9500,9 +9500,9 @@ trim-newlines@^3.0.0:
   integrity sha512-c1PTsA3tYrIsLGkJkzHF+w9F2EyxfXGo4UyJc4pFL++FMjnq0HJS69T3M7d//gKrFKwy429bouPescbjecU+Zw==
 
 ts-node@^10.6.0:
-  version "10.6.0"
-  resolved "https://registry.yarnpkg.com/ts-node/-/ts-node-10.6.0.tgz#c3f4195d5173ce3affdc8f2fd2e9a7ac8de5376a"
-  integrity sha512-CJen6+dfOXolxudBQXnVjRVvYTmTWbyz7cn+xq2XTsvnaXbHqr4gXSCNbS2Jj8yTZMuGwUoBESLaOkLascVVvg==
+  version "10.7.0"
+  resolved "https://registry.yarnpkg.com/ts-node/-/ts-node-10.7.0.tgz#35d503d0fab3e2baa672a0e94f4b40653c2463f5"
+  integrity sha512-TbIGS4xgJoX2i3do417KSaep1uRAW/Lu+WAL2doDHC0D6ummjirVOXU5/7aiZotbQ5p1Zp9tP7U6cYhA0O7M8A==
   dependencies:
     "@cspotcode/source-map-support" "0.7.0"
     "@tsconfig/node10" "^1.0.7"
@@ -9632,9 +9632,9 @@ uglify-es@^3.1.9:
     source-map "~0.6.1"
 
 uglify-js@^3.1.4:
-  version "3.15.2"
-  resolved "https://registry.yarnpkg.com/uglify-js/-/uglify-js-3.15.2.tgz#1ed2c976f448063b1f87adb68c741be79959f951"
-  integrity sha512-peeoTk3hSwYdoc9nrdiEJk+gx1ALCtTjdYuKSXMTDqq7n1W7dHPqWDdSi+BPL0ni2YMeHD7hKUSdbj3TZauY2A==
+  version "3.15.3"
+  resolved "https://registry.yarnpkg.com/uglify-js/-/uglify-js-3.15.3.tgz#9aa82ca22419ba4c0137642ba0df800cb06e0471"
+  integrity sha512-6iCVm2omGJbsu3JWac+p6kUiOpg3wFO2f8lIXjfEb8RrmLjzog1wTPMmwKB7swfzzqxj9YM+sGUM++u1qN4qJg==
 
 ultron@1.0.x:
   version "1.0.2"
