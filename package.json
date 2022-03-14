@@ -82,7 +82,8 @@
     "react-native-flipper": "^0.138.0",
     "realm": "^10.9.1",
     "release-it": "^14.6.2",
-    "typescript": "^4.1.3"
+    "typescript": "^4.1.3",
+    "vasern": "^0.3.68"
   },
   "peerDependencies": {
     "react": "*",
@@ -91,7 +92,8 @@
   },
   "optionalDependencies": {
     "@nozbe/watermelondb": ">=0.24",
-    "realm": "*"
+    "realm": "*",
+    "vasern": "*"
   },
   "prettier": {
     "quoteProps": "consistent",
