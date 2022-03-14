@@ -30,7 +30,9 @@
     "example:realm": "yarn --cwd example2",
     "pods:realm": "cd example2 && pod-install --quiet",
     "example:pouch": "yarn --cwd example3",
-    "pods:pouch": "cd example3 && pod-install --quiet"
+    "pods:pouch": "cd example3 && pod-install --quiet",
+    "example:vasern": "yarn --cwd example4",
+    "pods:vasern": "cd example4 && pod-install --quiet"
   },
   "keywords": [
     "react-native",

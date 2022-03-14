@@ -1,0 +1,24 @@
+{
+  "name": "react-native-flipper-databases-example4",
+  "description": "Example app for react-native-flipper-databases with Vasern",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "start": "react-native start"
+  },
+  "dependencies": {
+    "react": "17.0.2",
+    "react-native": "0.67.3",
+    "react-native-flipper": "^0.138.0",
+    "vasern": "^0.3.68"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.17.4",
+    "@babel/runtime": "^7.17.2",
+    "babel-plugin-module-resolver": "^4.0.0",
+    "metro-react-native-babel-preset": "^0.66.2",
+    "react-test-renderer": "17.0.2"
+  }
+}
