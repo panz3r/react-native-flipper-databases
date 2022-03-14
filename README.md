@@ -165,6 +165,38 @@ if (__DEV__) {
 // ...
 ```
 
+### [Vasern](https://vasern.github.io/)
+
+#### Setup
+
+Attach an open Vasern database:
+
+```js
+// ...
+
+export const VasernDB = new Vasern({
+  // Vasern config
+});
+
+/// ReactNativeFlipperDatabases - START
+
+if (__DEV__) {
+  // Import connectDatabases function and required DBDrivers
+  const {
+    connectDatabases,
+    VasernDB: VasernDBDriver,
+  } = require('react-native-flipper-databases');
+
+  connectDatabases([
+    new VasernDBDriver(VasernDB), // Pass in database definitions
+  ]);
+}
+
+/// ReactNativeFlipperDatabases - END
+
+// ...
+```
+
 ## Examples
 
 To see how to implement this plugin and test how it works some examples are provided.
@@ -185,6 +217,7 @@ yarn bootstrap
   - `example:watermelon` to launch the [`WatermelonDB`](#watermelondb) example app
   - `example:realm` to launch the [`MongoDB Realm`](#mongodb-realm) example app
   - `example:pouch` to launch the [`PouchDB`](#pouchdb) example app
+  - `example:vasern` to launch the [`Vasern`](#vasern) example app
 
 The plugin integrations are located inside the `src/infrastructure/database` folder of each example app.
 
