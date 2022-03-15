@@ -21,18 +21,24 @@
     "lint": "eslint \"**/*.{js,ts,tsx}\"",
     "test": "jest",
     "build": "bob build",
+    "clean": "run-p clean:*",
+    "clean:dist": "rimraf lib/",
     "prerelease": "run-s typescript lint test build",
     "release": "release-it",
     "prebootstrap": "yarn install",
     "bootstrap": "run-s example:* pods:*",
     "example:watermelon": "yarn --cwd example",
     "pods:watermelon": "pod-install example --quiet",
+    "clean:watermelon": "rimraf example/yarn.lock example/node_modules example/ios/Podfile.lock example/ios/Pods",
     "example:realm": "yarn --cwd example2",
     "pods:realm": "pod-install example2 --quiet",
+    "clean:realm": "rimraf example2/yarn.lock example2/node_modules example2/ios/Podfile.lock example2/ios/Pods",
     "example:pouch": "yarn --cwd example3",
     "pods:pouch": "pod-install example3 --quiet",
+    "clean:pouch": "rimraf example3/yarn.lock example3/node_modules example3/ios/Podfile.lock example3/ios/Pods",
     "example:vasern": "yarn --cwd example4",
-    "pods:vasern": "pod-install example4 --quiet"
+    "pods:vasern": "pod-install example4 --quiet",
+    "clean:vasern": "rimraf example4/yarn.lock example4/node_modules example4/ios/Podfile.lock example4/ios/Pods"
   },
   "keywords": [
     "react-native",
@@ -82,6 +88,7 @@
     "react-native-flipper": "^0.138.0",
     "realm": "^10.9.1",
     "release-it": "^14.6.2",
+    "rimraf": "^3.0.2",
     "typescript": "^4.1.3",
     "vasern": "^0.3.68"
   },
