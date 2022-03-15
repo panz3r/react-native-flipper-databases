@@ -16,7 +16,6 @@
     "!lib/typescript/example"
   ],
   "scripts": {
-    "setup": "yarn install",
     "prepare": "husky install && bob build",
     "typescript": "tsc --noEmit",
     "lint": "eslint \"**/*.{js,ts,tsx}\"",
@@ -24,7 +23,8 @@
     "build": "bob build",
     "prerelease": "run-s typescript lint test build",
     "release": "release-it",
-    "bootstrap": "run-s setup example:* pods:*",
+    "prebootstrap": "yarn install",
+    "bootstrap": "run-s example:* pods:*",
     "example:watermelon": "yarn --cwd example",
     "pods:watermelon": "pod-install example --quiet",
     "example:realm": "yarn --cwd example2",
