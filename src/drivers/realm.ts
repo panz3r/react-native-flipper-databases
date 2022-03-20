@@ -116,7 +116,7 @@ function getSchemaProperties(
     {}) as Record<string, Realm.ObjectSchemaProperty>;
 }
 
-function getCellValue(row: Record<string, unknown>, columnName: string): unknown {
+export function getCellValue(row: Record<string, unknown>, columnName: string): unknown {
   const cellValue = row[columnName];
-  return typeof cellValue === 'object' ? cellValue?.toString() : cellValue;
+  return typeof cellValue === 'object' ? JSON.stringify(cellValue, null, 2) : cellValue;
 }
