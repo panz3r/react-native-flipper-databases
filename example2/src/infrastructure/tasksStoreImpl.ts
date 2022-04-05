@@ -8,7 +8,7 @@ import { Task as TaskEntity } from './database/models/Task';
 
 type UpdaterFn = (realm: Realm) => void;
 
-const mapEntityToTask = (task: TaskEntity) =>
+const mapEntityToTask = (task: TaskEntity & Realm.Object) =>
   createTask(task.description, task.isComplete, task._id.toHexString());
 
 const getEntityId = (task: Task) => new Realm.BSON.ObjectID(task.id);
@@ -16,7 +16,9 @@ const getEntityId = (task: Task) => new Realm.BSON.ObjectID(task.id);
 export function useRealmDBTasksStore(): TasksStore {
   const realm = useRealm();
 
-  const [tasks, setTasks] = useState(realm.objects(TaskEntity).map(mapEntityToTask));
+  const [tasks, setTasks] = useState(
+    realm.objects<TaskEntity>('Task').map(mapEntityToTask)
+  );
   const [isLoading, setIsLoading] = useState(false);
   const [isUpdating, setIsUpdating] = useState(false);
 
@@ -26,7 +28,7 @@ export function useRealmDBTasksStore(): TasksStore {
 
       updaterFn(realm);
 
-      const tasksRes = realm.objects(TaskEntity).map(mapEntityToTask);
+      const tasksRes = realm.objects<TaskEntity>('Task').map(mapEntityToTask);
 
       setTasks(tasksRes);
 
@@ -40,7 +42,7 @@ export function useRealmDBTasksStore(): TasksStore {
   const loadTasks = useCallback(async () => {
     setIsLoading(true);
 
-    const tasksRes = realm.objects(TaskEntity).map(mapEntityToTask);
+    const tasksRes = realm.objects<TaskEntity>('Task').map(mapEntityToTask);
 
     setTasks(tasksRes);
 
