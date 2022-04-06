@@ -1,0 +1,17 @@
+name: Notify unreleased commits
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "30 8 * * *"
+
+jobs:
+  setup:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Run notify-release
+        uses: nearform/github-action-notify-release@v1
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          stale-days: 20
