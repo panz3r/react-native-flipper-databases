@@ -218,6 +218,7 @@ yarn bootstrap
   - `example:realm` to launch the [`MongoDB Realm`](#mongodb-realm) example app
   - `example:pouch` to launch the [`PouchDB`](#pouchdb) example app
   - `example:vasern` to launch the [`Vasern`](#vasern) example app
+  - `example:sqlitestorage` to launch the [`SQLite Storage`](#sqlite-storage) example app
 
 The plugin integrations are located inside the `src/infrastructure/database` folder of each example app.
 

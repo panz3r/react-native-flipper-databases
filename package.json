@@ -38,7 +38,10 @@
     "clean:pouch": "rimraf example3/yarn.lock example3/node_modules example3/ios/Podfile.lock example3/ios/Pods",
     "example:vasern": "yarn --cwd example4",
     "pods:vasern": "pod-install example4 --quiet",
-    "clean:vasern": "rimraf example4/yarn.lock example4/node_modules example4/ios/Podfile.lock example4/ios/Pods"
+    "clean:vasern": "rimraf example4/yarn.lock example4/node_modules example4/ios/Podfile.lock example4/ios/Pods",
+    "example:sqlitestorage": "yarn --cwd example5",
+    "pods:sqlitestorage": "pod-install example5 --quiet",
+    "clean:sqlitestorage": "rimraf example5/yarn.lock example5/node_modules example5/ios/Podfile.lock example5/ios/Pods"
   },
   "keywords": [
     "react-native",
