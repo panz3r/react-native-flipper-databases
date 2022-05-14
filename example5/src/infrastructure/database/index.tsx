@@ -14,13 +14,16 @@ export async function openTasksDatabase() {
 
   if (__DEV__) {
     // Import connectDatabases function and required DBDrivers
-    // const {
-    //   connectDatabases,
-    //   VasernDB: VasernDBDriver,
-    // } = require('react-native-flipper-databases');
-    // connectDatabases([
-    //   new VasernDBDriver(sqliteDB), // Pass in database definitions
-    // ]);
+    const { connectDatabases, SQLiteStorage } = require('react-native-flipper-databases');
+    connectDatabases([
+      // Pass in database definitions
+      new SQLiteStorage([
+        {
+          name: 'tasks.db',
+          database: db,
+        },
+      ]),
+    ]);
   }
 
   /// ReactNativeFlipperDatabases - END
