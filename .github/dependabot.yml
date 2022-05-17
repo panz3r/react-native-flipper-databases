@@ -29,3 +29,8 @@ updates:
     directory: '/example4'
     schedule:
       interval: 'weekly'
+
+  - package-ecosystem: 'npm'
+    directory: '/example5'
+    schedule:
+      interval: 'weekly'
