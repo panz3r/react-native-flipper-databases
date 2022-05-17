@@ -197,6 +197,46 @@ if (__DEV__) {
 // ...
 ```
 
+### [react-native-sqlite-storage](https://github.com/andpor/react-native-sqlite-storage)
+
+#### Setup
+
+Attach an open SQLite database (with Promise support enabled)
+
+```js
+// ...
+
+SQLite.enablePromise(true);
+
+async function openDatabase() {
+  const db = await SQLite.openDatabase({ name: 'data.db' });
+
+  // Create tables
+
+  /// ReactNativeFlipperDatabases - START
+
+  if (__DEV__) {
+    // Import connectDatabases function and required DBDrivers
+    const { connectDatabases, SQLiteStorage } = require('react-native-flipper-databases');
+    connectDatabases([
+      // Pass in database definitions
+      new SQLiteStorage([
+        {
+          name: 'data.db',
+          database: db,
+        },
+      ]),
+    ]);
+  }
+
+  /// ReactNativeFlipperDatabases - END
+
+  return db;
+}
+
+// ...
+```
+
 ## Examples
 
 To see how to implement this plugin and test how it works some examples are provided.
@@ -218,7 +258,7 @@ yarn bootstrap
   - `example:realm` to launch the [`MongoDB Realm`](#mongodb-realm) example app
   - `example:pouch` to launch the [`PouchDB`](#pouchdb) example app
   - `example:vasern` to launch the [`Vasern`](#vasern) example app
-  - `example:sqlitestorage` to launch the [`SQLite Storage`](#sqlite-storage) example app
+  - `example:sqlitestorage` to launch the [`SQLite Storage`](#react-native-sqlite-storage) example app
 
 The plugin integrations are located inside the `src/infrastructure/database` folder of each example app.
 
