@@ -8617,9 +8617,9 @@ realm-network-transport@^0.7.2:
     node-fetch "^2.6.0"
 
 realm@^10.9.1:
-  version "10.17.0"
-  resolved "https://registry.yarnpkg.com/realm/-/realm-10.17.0.tgz#735d8f0a5013c9a820d40b8b4b48e409ead6b606"
-  integrity sha512-8G5xJXoe+HHKdgtSoXvGv1yGLfS9IzXBsRnamAQJCjfI64uiYxPa/wSHkzGnqrcpmIq4VkV07AgPmzG5YmtZQw==
+  version "10.19.0"
+  resolved "https://registry.yarnpkg.com/realm/-/realm-10.19.0.tgz#9667001274450e4fe606904466c7508671df8e25"
+  integrity sha512-eI+QkTFO3YCAzfoRcALJaq3fGxEiScsTecf6bmw4MryH1PiKHk9hEbYCtu/wttgH90Gk1oJc8dRW2SrRNLfycA==
   dependencies:
     "@realm.io/common" "^0.1.1"
     bindings "^1.5.0"
