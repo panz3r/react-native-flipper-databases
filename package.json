@@ -75,7 +75,7 @@
     "@release-it/conventional-changelog": "^5.0.0",
     "@types/jest": "^28.1.1",
     "@types/react": "^17.0.15",
-    "@types/react-native": "^0.67.0",
+    "@types/react-native": "^0.68.0",
     "@types/react-native-sqlite-storage": "^5.0.2",
     "commitlint": "^17.0.0",
     "eslint": "7.32.0",
