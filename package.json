@@ -80,7 +80,7 @@
     "commitlint": "^17.0.0",
     "eslint": "7.32.0",
     "eslint-config-prettier": "^6.10.1",
-    "eslint-plugin-prettier": "4.0.0",
+    "eslint-plugin-prettier": "4.2.1",
     "husky": "^8.0.0",
     "jest": "^28.0.0",
     "npm-run-all": "^4.1.5",
