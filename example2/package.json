@@ -11,7 +11,7 @@
   "dependencies": {
     "react": "18.0.0",
     "react-native": "0.69.4",
-    "react-native-flipper": "^0.152.0",
+    "react-native-flipper": "^0.157.0",
     "react-native-get-random-values": "^1.7.2",
     "realm": "^10.13.0"
   },
