@@ -229,6 +229,45 @@ async function openDatabase() {
 // ...
 ```
 
+### [react-native-quick-sqlite](https://github.com/ospfranco/react-native-quick-sqlite)
+
+#### Setup
+
+```js
+import { openDatabase } from 'react-native-quick-sqlite'
+
+// ...
+
+/// ReactNativeFlipperDatabases - START
+
+if (__DEV__) {
+  // Import connectDatabases function and required DBDrivers
+  const {
+    connectDatabases,
+    QuickSQLiteStorage,
+  } = require('react-native-flipper-databases');
+
+  openDatabase(
+    { name: 'data.db' },
+    (db) => {
+      connectDatabases([
+        new QuickSQLiteStorage([
+          {
+            name: 'data.db',
+            database: db,
+          },
+        ]),
+      ])
+    },
+    () => {},
+  )
+}
+
+/// ReactNativeFlipperDatabases - END
+
+// ...
+```
+
 ## Examples
 
 To see how to implement this plugin and test how it works some examples are provided.
