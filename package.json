@@ -80,6 +80,7 @@
     "react-native": "0.69.4",
     "react-native-builder-bob": "^0.18.3",
     "react-native-flipper": "^0.157.0",
+    "react-native-quick-sqlite": "^4.0.3",
     "react-native-sqlite-storage": "^6.0.1",
     "realm": "^10.9.1",
     "release-it": "^15.2.0",
@@ -94,6 +95,7 @@
   },
   "optionalDependencies": {
     "@nozbe/watermelondb": ">=0.24",
+    "react-native-quick-sqlite": "*",
     "react-native-sqlite-storage": "*",
     "realm": "*",
     "vasern": "*"
