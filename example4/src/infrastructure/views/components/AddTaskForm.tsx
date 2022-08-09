@@ -9,10 +9,7 @@ interface AddTaskFormProps {
   disabled?: boolean;
 }
 
-export const AddTaskForm: React.FC<AddTaskFormProps> = ({
-  onSubmit,
-  disabled = false,
-}) => {
+export const AddTaskForm: React.FC<AddTaskFormProps> = ({ onSubmit, disabled = false }) => {
   const [description, setDescription] = useState('');
 
   const handleSubmit = () => {

@@ -16,9 +16,7 @@ const getEntityId = (task: Task) => new Realm.BSON.ObjectID(task.id);
 export function useRealmDBTasksStore(): TasksStore {
   const realm = useRealm();
 
-  const [tasks, setTasks] = useState(
-    realm.objects<TaskEntity>('Task').map(mapEntityToTask)
-  );
+  const [tasks, setTasks] = useState(realm.objects<TaskEntity>('Task').map(mapEntityToTask));
   const [isLoading, setIsLoading] = useState(false);
   const [isUpdating, setIsUpdating] = useState(false);
 
@@ -64,10 +62,7 @@ export function useRealmDBTasksStore(): TasksStore {
   const updateTask = useCallback(
     async (task: Task) =>
       updateTasks(realmDB => {
-        const taskToUpdate = realmDB.objectForPrimaryKey<TaskEntity>(
-          'Task',
-          getEntityId(task)
-        );
+        const taskToUpdate = realmDB.objectForPrimaryKey<TaskEntity>('Task', getEntityId(task));
         if (!taskToUpdate) {
           throw new Error(`Cannot update task with ID ${task.id}. Task not found!`);
         }

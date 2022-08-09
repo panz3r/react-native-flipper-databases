@@ -19,9 +19,7 @@ export async function databaseListToFlipperArray(
   for (const databaseDescriptorHolder of databaseDescriptorHolderList) {
     const { databaseDescriptor, databaseDriver, id } = databaseDescriptorHolder;
 
-    const tableNameList: string[] = await databaseDriver.getTableNames(
-      databaseDescriptor
-    );
+    const tableNameList: string[] = await databaseDriver.getTableNames(databaseDescriptor);
 
     databases.push({
       id,
@@ -152,9 +150,7 @@ export function databaseGetTableInfoResponseToFlipperObject(
   };
 }
 
-export function flipperObjectToExecuteSqlRequest(
-  params: FlipperObject
-): ExecuteSqlRequest | null {
+export function flipperObjectToExecuteSqlRequest(params: FlipperObject): ExecuteSqlRequest | null {
   const databaseId = params.databaseId as number;
   const value = params.value as string;
 

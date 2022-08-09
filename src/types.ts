@@ -105,10 +105,7 @@ export interface DatabaseDriver<DD extends DatabaseDescriptor = DatabaseDescript
     count: number
   ): Promise<DatabaseGetTableDataResponse>;
 
-  getTableInfo(
-    databaseDescriptor: DD,
-    table: string
-  ): Promise<DatabaseGetTableInfoResponse>;
+  getTableInfo(databaseDescriptor: DD, table: string): Promise<DatabaseGetTableInfoResponse>;
 
   executeSql(databaseDescriptor: DD, query: string): Promise<DatabaseExecuteSQLResponse>;
 }

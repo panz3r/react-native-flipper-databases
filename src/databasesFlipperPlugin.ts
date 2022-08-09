@@ -1,11 +1,7 @@
 import type { Flipper } from 'react-native-flipper';
 
 import { DatabasesManager } from './databasesManager';
-import {
-  getInvalidDatabaseError,
-  getInvalidRequestError,
-  getSqlExecutionError,
-} from './errors';
+import { getInvalidDatabaseError, getInvalidRequestError, getSqlExecutionError } from './errors';
 import {
   databaseExecuteSqlResponseToFlipperObject,
   databaseGetTableDataReponseToFlipperObject,
@@ -109,10 +105,7 @@ export class DatabasesFlipperPlugin implements Flipper.FlipperPlugin {
         return responder.error(getInvalidRequestError());
       }
 
-      const tableInfo = await this.databasesManager.getTableInfo(
-        req.databaseId,
-        req.table
-      );
+      const tableInfo = await this.databasesManager.getTableInfo(req.databaseId, req.table);
 
       if (!tableInfo) {
         return responder.error(getInvalidDatabaseError());

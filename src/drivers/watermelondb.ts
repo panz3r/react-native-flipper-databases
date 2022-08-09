@@ -71,19 +71,13 @@ export class WatermelonDBDriver implements DatabaseDriver {
 
     const totalCount = await collection.query().fetchCount();
     const results = await collection
-      .query(
-        Q.sortBy(order ?? 'id', !reverse ? 'asc' : 'desc'),
-        Q.skip(start),
-        Q.take(count)
-      )
+      .query(Q.sortBy(order ?? 'id', !reverse ? 'asc' : 'desc'), Q.skip(start), Q.take(count))
       .fetch();
 
     return {
       columns: allColumns,
       values: results.map(row =>
-        allColumns.map(
-          colName => (row._raw as unknown as { [key: string]: unknown })[colName]
-        )
+        allColumns.map(colName => (row._raw as unknown as { [key: string]: unknown })[colName])
       ),
       start,
       count: totalCount,

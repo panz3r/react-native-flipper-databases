@@ -11,9 +11,8 @@ export const IntroText: React.FC<{}> = () => (
       Welcome to the React Native Flipper Databases example app for WatermelonDB
     </Text>
     <Text style={styles.paragraph}>
-      Start adding a task using the form at the top of the screen to see how they are
-      created in WatermelonDB. You can also toggle the task status or remove it from the
-      list.
+      Start adding a task using the form at the top of the screen to see how they are created in
+      WatermelonDB. You can also toggle the task status or remove it from the list.
     </Text>
     <Text style={styles.paragraph}>Learn more about WatermelonDB at:</Text>
     <Pressable onPress={() => openURLInBrowser('https://nozbe.github.io/WatermelonDB/')}>

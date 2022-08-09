@@ -61,10 +61,7 @@ export async function findTask(db: SQLiteDatabase, taskID: number): Promise<Task
   }
 }
 
-export async function insertTask(
-  db: SQLiteDatabase,
-  newTask: NewTaskEntity
-): Promise<TaskEntity> {
+export async function insertTask(db: SQLiteDatabase, newTask: NewTaskEntity): Promise<TaskEntity> {
   const insertQuery = `INSERT INTO ${tableName}(description, completed) values('${newTask.description}', ${newTask.completed})`;
 
   try {
@@ -76,10 +73,7 @@ export async function insertTask(
   }
 }
 
-export async function replaceTask(
-  db: SQLiteDatabase,
-  task: TaskEntity
-): Promise<TaskEntity> {
+export async function replaceTask(db: SQLiteDatabase, task: TaskEntity): Promise<TaskEntity> {
   const updateQuery = `INSERT OR REPLACE INTO ${tableName}(rowid, description, completed) values(${task.id}, '${task.description}', ${task.completed})`;
 
   try {
@@ -91,10 +85,7 @@ export async function replaceTask(
   }
 }
 
-export async function deleteTask(
-  db: SQLiteDatabase,
-  taskId: number
-): Promise<TaskEntity> {
+export async function deleteTask(db: SQLiteDatabase, taskId: number): Promise<TaskEntity> {
   const deleteQuery = `DELETE from ${tableName} where rowid = ${taskId}`;
 
   try {

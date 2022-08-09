@@ -20,10 +20,7 @@ const TaskItemBase: React.FC<TaskItemProps> = ({
   onDelete,
 }) => (
   <View style={styles.task}>
-    <Pressable
-      onPress={onToggleStatus}
-      style={[styles.status, isComplete && styles.completed]}
-    >
+    <Pressable onPress={onToggleStatus} style={[styles.status, isComplete && styles.completed]}>
       <Text style={styles.icon}>{isComplete ? '✓' : '○'}</Text>
     </Pressable>
     <View style={styles.descriptionContainer}>
@@ -98,7 +95,6 @@ const styles = StyleSheet.create({
 
 // We want to make sure only tasks that change are rerendered
 const shouldNotRerender = (prevProps: TaskItemProps, nextProps: TaskItemProps) =>
-  prevProps.description === nextProps.description &&
-  prevProps.isComplete === nextProps.isComplete;
+  prevProps.description === nextProps.description && prevProps.isComplete === nextProps.isComplete;
 
 export const TaskItem = memo(TaskItemBase, shouldNotRerender);

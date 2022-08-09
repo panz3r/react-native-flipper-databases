@@ -9,10 +9,7 @@ const db = new PouchDB('db', {
 
 if (__DEV__) {
   // Import connectDatabases function and required DBDrivers
-  const {
-    connectDatabases,
-    PouchDB: PouchDBDriver,
-  } = require('react-native-flipper-databases');
+  const { connectDatabases, PouchDB: PouchDBDriver } = require('react-native-flipper-databases');
 
   connectDatabases([
     new PouchDBDriver([db]), // Pass in database definitions

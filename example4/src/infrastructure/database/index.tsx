@@ -11,10 +11,7 @@ export const VasernDB = new Vasern({
 
 if (__DEV__) {
   // Import connectDatabases function and required DBDrivers
-  const {
-    connectDatabases,
-    VasernDB: VasernDBDriver,
-  } = require('react-native-flipper-databases');
+  const { connectDatabases, VasernDB: VasernDBDriver } = require('react-native-flipper-databases');
 
   connectDatabases([
     new VasernDBDriver(VasernDB), // Pass in database definitions

@@ -42,13 +42,7 @@ export class SQLiteStorageDriver implements DatabaseDriver<SQLiteDatabaseDescrip
     const cols: string[][] = [];
     for (let index = 0; index < result.rows.length; index++) {
       const col = result.rows.item(index);
-      cols.push([
-        col.name,
-        col.type,
-        Boolean(col.notnull),
-        Boolean(col.pk),
-        col.dflt_value,
-      ]);
+      cols.push([col.name, col.type, Boolean(col.notnull), Boolean(col.pk), col.dflt_value]);
     }
 
     return {

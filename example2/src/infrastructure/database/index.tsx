@@ -1,11 +1,4 @@
-import React, {
-  createContext,
-  createRef,
-  useContext,
-  useEffect,
-  useRef,
-  useState,
-} from 'react';
+import React, { createContext, createRef, useContext, useEffect, useRef, useState } from 'react';
 import Realm from 'realm';
 
 import { Task } from './models/Task';
