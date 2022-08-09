@@ -2,7 +2,7 @@
 
 > Flipper Databases plugin for React Native
 
-[![license](https://img.shields.io/github/license/panz3r/react-native-flipper-databases.svg)](LICENSE) [![Build & Test](https://github.com/panz3r/react-native-flipper-databases/workflows/Build%20&%20Test/badge.svg)](https://github.com/panz3r/react-native-flipper-databases/actions) [![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/panz3r/react-native-flipper-databases.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/panz3r/react-native-flipper-databases/context:javascript) [![Github Issues](https://img.shields.io/github/issues/panz3r/react-native-flipper-databases.svg)](https://github.com/panz3r/react-native-flipper-databases/issues)
+[![license](https://img.shields.io/npm/l/react-native-flipper-databases)](LICENSE) [![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/panz3r/react-native-flipper-databases.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/panz3r/react-native-flipper-databases/context:javascript)
 
 [![NPM version](https://img.shields.io/npm/v/react-native-flipper-databases.svg)](https://npmjs.com/package/react-native-flipper-databases) [![NPM downloads](https://img.shields.io/npm/dm/react-native-flipper-databases.svg)](https://npmjs.com/package/react-native-flipper-databases)
 
@@ -64,7 +64,6 @@ When sticking to a managed [Expo](https://expo.dev/) project, it's impossible to
 
 See [@liamdawson/disable-react-native-flipper-databases-expo-plugin](https://www.npmjs.com/package/@liamdawson/disable-react-native-flipper-databases-expo-plugin) for more info.
 
-
 ## Usage
 
 ### [WatermelonDB](https://nozbe.github.io/WatermelonDB/)
@@ -75,7 +74,6 @@ See [@liamdawson/disable-react-native-flipper-databases-expo-plugin](https://www
 | -------------------- | ----------- |
 | >=0.24.0             | 2.x         |
 | <0.24.0              | 1.x         |
-
 
 #### Setup
 
@@ -88,10 +86,7 @@ Attach a WatermelonDB database:
 
 if (__DEV__) {
   // Import connectDatabases function and required DBDrivers
-  const {
-    connectDatabases,
-    WatermelonDB,
-  } = require('react-native-flipper-databases');
+  const { connectDatabases, WatermelonDB } = require('react-native-flipper-databases');
 
   connectDatabases([
     new WatermelonDB(database), // Pass in database definition
@@ -118,10 +113,7 @@ const realm = await Realm.open(config);
 
 if (__DEV__) {
   // Import connectDatabases function and required DBDrivers
-  const {
-    connectDatabases,
-    RealmDB,
-  } = require('react-native-flipper-databases');
+  const { connectDatabases, RealmDB } = require('react-native-flipper-databases');
 
   connectDatabases([
     new RealmDB('Realm', realm), // Pass in a realm name and an open realm reference
@@ -242,9 +234,10 @@ async function openDatabase() {
 To see how to implement this plugin and test how it works some examples are provided.
 
 To run the examples:
+
 - clone the repo
 ```sh
-git clone https://github.com/panz3r/react-native-flipper-databases.git
+git clone https://codeberg.org/panz3r/react-native-flipper-databases.git
 ```
 
 - bootstrap the project
@@ -262,7 +255,6 @@ yarn bootstrap
 
 The plugin integrations are located inside the `src/infrastructure/database` folder of each example app.
 
-
 ## Contributing
 
 See the [contributing guide](CONTRIBUTING.md) to learn how to contribute to the repository and the development workflow.
@@ -273,8 +265,4 @@ MIT
 
 ---
 
-Made with :sparkles: & :heart: by [Mattia Panzeri](https://github.com/panz3r) and [contributors](https://github.com/panz3r/react-native-flipper-databases/graphs/contributors)
-
-If you found this project to be helpful, please consider buying me a coffee.
-
-[![buy me a coffee](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://buymeacoff.ee/4f18nT0Nk)
+Made with :sparkles: & :heart: by [Mattia Panzeri](https://codeberg.org/panz3r) and [contributors](https://codeberg.org/panz3r/react-native-flipper-databases/activity)

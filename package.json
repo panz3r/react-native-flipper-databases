@@ -51,23 +51,13 @@
     "databases",
     "development"
   ],
-  "repository": "https://github.com/panz3r/react-native-flipper-databases",
-  "author": "Mattia Panzeri <mattia.panzeri93@gmail.com> (https://github.com/panz3r)",
+  "repository": "https://codeberg.org/panz3r/react-native-flipper-databases",
+  "author": "Mattia Panzeri (https://codeberg.org/panz3r)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/panz3r/react-native-flipper-databases/issues"
+    "url": "https://codeberg.org/panz3r/react-native-flipper-databases/issues"
   },
-  "homepage": "https://github.com/panz3r/react-native-flipper-databases#readme",
-  "funding": [
-    {
-      "type": "kofi",
-      "url": "https://ko-fi.com/panz3r"
-    },
-    {
-      "type": "buymeacoffee",
-      "url": "https://buymeacoff.ee/4f18nT0Nk"
-    }
-  ],
+  "homepage": "https://codeberg.org/panz3r/react-native-flipper-databases#readme",
   "devDependencies": {
     "@commitlint/config-conventional": "^17.0.3",
     "@nozbe/watermelondb": ">=0.24",
