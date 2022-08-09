@@ -22,7 +22,11 @@ const config = {
   // deleteRealmIfMigrationNeeded: true   // default is false
 };
 
-export const RealmProvider: React.FC<{}> = ({ children }) => {
+type RealmProviderProps = {
+  children?: React.ReactNode;
+};
+
+export const RealmProvider: React.FC<RealmProviderProps> = ({ children }) => {
   const [isReady, setReady] = useState(false);
 
   // We store a reference to our realm using useRef that allows us to access it via
