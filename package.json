@@ -1,6 +1,6 @@
 {
   "name": "react-native-flipper-databases",
-  "version": "2.5.0",
+  "version": "2.5.1",
   "description": "Flipper Databases plugin for React Native",
   "main": "lib/commonjs/index.js",
   "module": "lib/module/index.js",
