@@ -6,12 +6,14 @@
   "scripts": {
     "android": "react-native run-android",
     "ios": "react-native run-ios",
-    "start": "react-native start"
+    "start": "react-native start",
+    "test": "jest",
+    "lint": "eslint ."
   },
   "dependencies": {
-    "react": "18.0.0",
-    "react-native": "0.69.4",
-    "react-native-flipper": "^0.157.0",
+    "react": "18.1.0",
+    "react-native": "0.70.1",
+    "react-native-flipper": "^0.164.0",
     "react-native-sqlite-storage": "^6.0.1"
   },
   "devDependencies": {
@@ -19,7 +21,7 @@
     "@babel/runtime": "^7.12.5",
     "@types/react-native-sqlite-storage": "^5.0.2",
     "babel-plugin-module-resolver": "^4.0.0",
-    "metro-react-native-babel-preset": "^0.70.3",
-    "react-test-renderer": "18.0.0"
+    "metro-react-native-babel-preset": "^0.72.1",
+    "react-test-renderer": "18.1.0"
   }
 }
