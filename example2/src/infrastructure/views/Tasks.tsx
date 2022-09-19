@@ -23,7 +23,7 @@ export function TasksView() {
 
   return (
     <>
-      <StatusBar barStyle="light-content" />
+      <StatusBar barStyle="light-content" backgroundColor={colors.darkBlue} />
       <SafeAreaView style={styles.screen}>
         <View style={styles.content}>
           <AddTaskForm onSubmit={addTask} disabled={shouldDisableButtons} />

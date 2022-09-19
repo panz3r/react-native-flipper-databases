@@ -6,12 +6,14 @@
   "scripts": {
     "android": "react-native run-android",
     "ios": "react-native run-ios",
-    "start": "react-native start"
+    "start": "react-native start",
+    "test": "jest",
+    "lint": "eslint ."
   },
   "dependencies": {
-    "react": "18.0.0",
-    "react-native": "0.69.4",
-    "react-native-flipper": "^0.157.0",
+    "react": "18.1.0",
+    "react-native": "0.70.1",
+    "react-native-flipper": "^0.164.0",
     "react-native-get-random-values": "^1.7.2",
     "realm": "^10.13.0"
   },
@@ -19,7 +21,7 @@
     "@babel/core": "^7.12.9",
     "@babel/runtime": "^7.12.5",
     "babel-plugin-module-resolver": "^4.0.0",
-    "metro-react-native-babel-preset": "^0.70.3",
-    "react-test-renderer": "18.0.0"
+    "metro-react-native-babel-preset": "^0.72.1",
+    "react-test-renderer": "18.1.0"
   }
 }
