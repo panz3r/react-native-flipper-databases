@@ -2,7 +2,7 @@
 
 > Flipper Databases plugin for React Native
 
-[![license](https://img.shields.io/npm/l/react-native-flipper-databases)](LICENSE) [![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/panz3r/react-native-flipper-databases.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/panz3r/react-native-flipper-databases/context:javascript)
+[![license](https://img.shields.io/github/license/panz3r/react-native-flipper-databases.svg)](LICENSE) [![Build & Test](https://github.com/panz3r/react-native-flipper-databases/workflows/Build%20&%20Test/badge.svg)](https://github.com/panz3r/react-native-flipper-databases/actions) [![Github Issues](https://img.shields.io/github/issues/panz3r/react-native-flipper-databases.svg)](https://github.com/panz3r/react-native-flipper-databases/issues)
 
 [![NPM version](https://img.shields.io/npm/v/react-native-flipper-databases.svg)](https://npmjs.com/package/react-native-flipper-databases) [![NPM downloads](https://img.shields.io/npm/dm/react-native-flipper-databases.svg)](https://npmjs.com/package/react-native-flipper-databases)
 
@@ -273,10 +273,9 @@ if (__DEV__) {
 To see how to implement this plugin and test how it works some examples are provided.
 
 To run the examples:
-
 - clone the repo
 ```sh
-git clone https://codeberg.org/panz3r/react-native-flipper-databases.git
+git clone https://github.com/panz3r/react-native-flipper-databases.git
 ```
 
 - bootstrap the project
@@ -304,4 +303,4 @@ MIT
 
 ---
 
-Made with :sparkles: & :heart: by [Mattia Panzeri](https://codeberg.org/panz3r) and [contributors](https://codeberg.org/panz3r/react-native-flipper-databases/activity)
+Made with :sparkles: & :heart: by [Mattia Panzeri](https://github.com/panz3r) and [contributors](https://github.com/panz3r/react-native-flipper-databases/graphs/contributors)
